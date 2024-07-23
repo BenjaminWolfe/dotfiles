@@ -18,6 +18,8 @@ Run [scripts/setup][scripts/setup] to set everything up!
   - Then mouse over **Workspace** at the top until you see a little blue folder
   - Drag that blue folder over into the menu bar
 - Display the time with seconds in the menu bar (search for that phrase from Spotlight)
+- Customize modifier keys (search for that phrase from Spotlight)
+  - If you're using a Das Keyboard, set Option to Command and Command to Option
 
 ## License and Install: MS Office
 
