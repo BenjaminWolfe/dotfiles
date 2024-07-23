@@ -36,6 +36,12 @@ then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
 - If you're using the Insta360 Link camera, you'll have to [download that controller][insta360-link].
 - You'll want to install **Chrome apps** like Messenger and possibly YouTube Music.
 
+## Permissions
+
+Before you have any conference calls,
+search Spotlight for "Allow applications to record your screen"
+and toggle permissions on applications like Slack and Zoom.
+
 ## License: Ableton Live Suite 11
 
 You'll have installed Ableton from the automated setup script above.
