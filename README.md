@@ -20,6 +20,7 @@ Run [scripts/setup][scripts/setup] to set everything up!
 - Display the time with seconds in the menu bar (search for that phrase from Spotlight)
 - Customize modifier keys (search for that phrase from Spotlight)
   - If you're using a Das Keyboard, set Option to Command and Command to Option
+- Mouse sensitivity (search for that phrase from Spotlight): 7/10 for magic mouse
 
 ## License and Install: MS Office
 
