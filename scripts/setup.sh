@@ -78,6 +78,12 @@ done <~/.dotfiles/config/repos
 # Create a directory for logs within the Workspace (used by iTerm2)
 mkdir -p ~/Workspace/logs
 
+# Ensure zsh is the current shell before installing iTerm2 shell integration
+if [ "$SHELL" != "/bin/zsh" ]; then
+  chsh -s /bin/zsh
+  export SHELL=/bin/zsh
+fi
+
 # Install iTerm2 shell integration
 curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 
