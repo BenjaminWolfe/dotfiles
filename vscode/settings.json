@@ -1,0 +1,91 @@
+{
+  // Git settings
+  "git.ignoredRepositories": [
+    ".oh-my-zsh",
+    ".oh-my-zsh/custom/themes/powerlevel10k/"
+  ],
+  "git.untrackedChanges": "separate",
+  "git.suggestSmartCommit": false,
+  "git.confirmSync": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "scm.experimental.showHistoryGraph": true,
+  // Editor and terminal settings
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [
+    80
+  ],
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh"
+    }
+  },
+  // AI and coding
+  "github.copilot.editor.enableAutoCompletions": true,
+  "interactiveWindow.executeWithShiftEnter": true,
+  // Language-specific formatter settings
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnType": true
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatterSettings": {
+      "singleQuote": true
+    },
+    "editor.lintingEnabled": true
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  // Python-specific settings
+  "python.formatting.provider": "black",
+  // SQL-specific settings
+  // TODO add .sqlfluff config to MacBook Air
+  "sqlfluff.config": "/home/benjamin/.sqlfluff",
+  "sqltools.results.reuseTabs": "connection",
+  "snowflake.connectionsConfigFile": "/Users/benjamin/.snowflake/connections.toml",
+  // Other settings
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "workbench.editor.empty.hint": "hidden",
+  "prisma.showPrismaDataPlatformNotification": false,
+  // ShellCheck settings
+  "shellcheck.enable": true,
+  "shellcheck.run": "onType"
+}

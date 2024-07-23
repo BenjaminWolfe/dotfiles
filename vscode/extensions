@@ -1,0 +1,67 @@
+# Docker
+ms-azuretools.vscode-docker # Docker integration for managing containers and images.
+
+# Remote Development
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vscode-remote.vscode-remote-extensionpack
+ms-vscode.remote-explorer
+ms-vscode.remote-server
+
+# Live Sharing
+ms-vsliveshare.vsliveshare # Real-time collaboration.
+
+# Code Formatting and Display
+esbenp.prettier-vscode # Prettier for code formatting.
+akamud.vscode-theme-onedark # Dark theme.
+oderwat.indent-rainbow # Highlights indentation levels with different colors.
+usernamehw.errorlens # Highlights errors and warnings in the editor.
+
+# AI
+github.copilot # AI-assisted code completions.
+github.copilot-chat # AI-assisted code discussions.
+
+# TypeScript and JavaScript
+dbaeumer.vscode-eslint # Linting for JavaScript and TypeScript.
+prisma.prisma # Prisma ORM support.
+
+# Python
+ms-python.python # Python support.
+ms-python.debugpy # Debugger.
+ms-toolsai.jupyter # Jupyter notebooks support.
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
+ms-python.black-formatter # Black code formatter.
+ms-python.isort # Sorts Python imports.
+
+# SQL
+mtxr.sqltools # SQL management tool.
+mtxr.sqltools-driver-pg # PostgreSQL driver for SQLTools.
+snowflake.snowflake-vsc # Snowflake integration.
+dorzey.vscode-sqlfluff # Linting with SQLFluff.
+inferrinizzard.prettier-sql-vscode # SQL formatting with Prettier.
+janisdd.vscode-edit-csv # CSV editing.
+ptweir.python-string-sql # SQL syntax highlighting in Python strings.
+
+# Shell
+timonwong.shellcheck # Shell script linting.
+foxundermoon.shell-format # Shell script formatting.
+
+# JSON and YAML
+aykutsarac.jsoncrack-vscode # Visualizes JSON data structures.
+nidu.copy-json-path # Copies JSON paths.
+redhat.vscode-yaml # YAML support.
+quicktype.quicktype # Generates types and converters from JSON.
+
+# Testing
+firsttris.vscode-jest-runner # Jest test runner.
+
+# Miscellaneous
+joffreykern.markdown-toc # Generates table of contents for Markdown files.
+liamhammett.inline-parameters # Displays inline parameter names.
+ritwickdey.liveserver # Launches a local development server with live reload.
+wmaurer.change-case # Changes the case of selected text.
+yo1dog.cursor-align # Aligns cursor positions.

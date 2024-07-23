@@ -1,0 +1,9 @@
+// Place your key bindings in this file to override the defaultsauto[]
+// Currently trimmed down aggressively; add back later as needed
+[
+    {
+        "key": "cmd+enter",
+        "command": "sqltools.executeCurrentQuery",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    }
+]

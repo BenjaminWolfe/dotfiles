@@ -1,0 +1,6 @@
+[user]
+name = Benjamin Wolfe
+email = benjamin.e.wolfe@gmail.com
+
+[core]
+excludesfile = /Users/benjamin/.gitignore_global
