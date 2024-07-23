@@ -1,12 +1,12 @@
 # dotfiles
 
-The "[Everyday Carry][edc]" for my personal setup.
+The [Everyday Carry][edc] for my personal setup, so to speak.
 It's meant to help me get set up on a new Mac.
 See [prerequisites.md](prerequisites.md) to get started.
 
 ## Automated Set-Up
 
-Run [scripts/setup][scripts/setup] to set everything up!
+Run [scripts/setup](scripts/setup) to set everything up!
 **Note:** As of 2024-07-23, I haven't actually tested this script end to end.
 
 ## OS Customization
@@ -64,8 +64,8 @@ Just copy everything to an external HD before wiping.
 
 I can't seem to get rid of a couple spots VS Code is marking as issues:
 
-- [.p10k.zsh][.p10k.zsh]: `22:4: statements must be separated by &, ; or a newline`
-- [.zshrc][.zshrc]: `4:65: parameter expansion requires a literal`
+- [.p10k.zsh](.p10k.zsh): `22:4: statements must be separated by &, ; or a newline`
+- [.zshrc](.zshrc): `4:65: parameter expansion requires a literal`
 
 Neither of them seem to be real issues, as the scripts run fine.
 
