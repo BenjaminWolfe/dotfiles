@@ -4,6 +4,7 @@
     ".oh-my-zsh",
     ".oh-my-zsh/custom/themes/powerlevel10k/"
   ],
+  "git.autofetch": true,
   "git.untrackedChanges": "separate",
   "git.suggestSmartCommit": false,
   "git.confirmSync": false,
