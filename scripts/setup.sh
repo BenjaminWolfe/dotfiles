@@ -61,6 +61,7 @@ while IFS= read -r line || [ -n "$line" ]; do
 done <~/.dotfiles/config/formulae
 
 # Install VS Code extensions from vscode/extensions, skipping blanks and comments
+# TODO: Look into whether it's OK to run VS Code programatically before opening
 while IFS= read -r line || [ -n "$line" ]; do
   extension=$(echo "$line" | cut -d'#' -f1 | xargs)
   [ -z "$extension" ] && continue
@@ -90,6 +91,8 @@ curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 # Set iTerm2 to load preferences from the dotfiles directory
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/.dotfiles/iterm2"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+
+# TODO: Consider adding GitHub Copilot integration to iTerm2 & VS Code terminal
 
 # Source the custom .zshrc to apply configurations
 # shellcheck disable=SC1090
