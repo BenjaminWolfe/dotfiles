@@ -1,5 +1,9 @@
 # Prerequisites
 
+**TODO:** Look into storing SSH keys in 1Password,
+and doing away with these prerequisites altogether!
+(Or most of them.)
+
 Set up git with your name and email and a new SSH key:
 
 ```sh
