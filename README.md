@@ -61,7 +61,11 @@ Just start the application and sync the vault from there.
 
 ## Other Customization
 
-Mute audio notifications in Slack.
+- In the VS Code version control panel, next to the words `source control`,
+  click the 3 dots, and choose:
+  - View & Sort: View as Tree
+  - Repositories: Sort by Path
+- Mute audio notifications in Slack.
 
 ## Other Notes
 
