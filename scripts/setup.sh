@@ -54,21 +54,21 @@ while IFS= read -r line || [ -n "$line" ]; do
   tap=$(echo "$line" | cut -d'#' -f1 | xargs)
   [ -z "$tap" ] && continue
   brew tap "$tap"
-done <~/.dotfiles/config/taps
+done <~/.dotfiles/config/taps.txt
 
 # Install Homebrew casks from config/casks, skipping blanks and comments
 while IFS= read -r line || [ -n "$line" ]; do
   cask=$(echo "$line" | cut -d'#' -f1 | xargs)
   [ -z "$cask" ] && continue
   brew install --cask "$cask"
-done <~/.dotfiles/config/casks
+done <~/.dotfiles/config/casks.txt
 
 # Install Homebrew formulae from config/formulae, skipping blanks and comments
 while IFS= read -r line || [ -n "$line" ]; do
   formula=$(echo "$line" | cut -d'#' -f1 | xargs)
   [ -z "$formula" ] && continue
   brew install "$formula"
-done <~/.dotfiles/config/formulae
+done <~/.dotfiles/config/formulae.txt
 
 # Install VS Code extensions from vscode/extensions, skipping blanks and comments
 # TODO: Look into whether it's OK to run VS Code programatically before opening
@@ -76,7 +76,7 @@ while IFS= read -r line || [ -n "$line" ]; do
   extension=$(echo "$line" | cut -d'#' -f1 | xargs)
   [ -z "$extension" ] && continue
   code --install-extension "$extension"
-done <~/.dotfiles/vscode/extensions
+done <~/.dotfiles/vscode/extensions.txt
 
 # Create a Workspace directory and clone repos from config/repos, skipping blanks and comments
 mkdir -p ~/Workspace && cd ~/Workspace || exit 1
@@ -84,7 +84,7 @@ while IFS= read -r line || [ -n "$line" ]; do
   repo=$(echo "$line" | cut -d'#' -f1 | xargs)
   [ -z "$repo" ] && continue
   git clone git@github.com:"$repo"
-done <~/.dotfiles/config/repos
+done <~/.dotfiles/config/repos.txt
 
 # Create a directory for logs within the Workspace (used by iTerm2)
 mkdir -p ~/Workspace/logs
