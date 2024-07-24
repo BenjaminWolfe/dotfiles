@@ -2,7 +2,8 @@
   // Git settings
   "git.ignoredRepositories": [
     ".oh-my-zsh",
-    ".oh-my-zsh/custom/themes/powerlevel10k/"
+    ".oh-my-zsh/custom/themes/powerlevel10k/",
+    ".nvm"
   ],
   "git.autofetch": true,
   "git.untrackedChanges": "separate",
