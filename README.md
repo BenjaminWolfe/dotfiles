@@ -21,6 +21,8 @@ Run [scripts/setup](scripts/setup) to set everything up!
 - Customize modifier keys (search for that phrase from Spotlight)
   - If you're using a Das Keyboard, set Option to Command and Command to Option
 - Mouse sensitivity (search for that phrase from Spotlight): 7/10 for magic mouse
+- Allow applications to update or delete other apps (search Spotlight for that phrase): VS Code
+  - This lets you update applications via Homebrew from the integrated terminal
 
 ## License and Install: MS Office
 
