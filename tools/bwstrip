@@ -1,0 +1,86 @@
+#!/bin/bash
+
+# Function to display usage information
+usage() {
+    echo "Usage: $0 --prefix 'prefix' --suffix 'suffix' --dir directory"
+    echo "  -p, --prefix 'prefix'  The prefix to remove from filenames."
+    echo "  -s, --suffix 'suffix'  The suffix to remove from filenames."
+    echo "  -d, --dir directory    The directory containing the files."
+    exit 1
+}
+
+# Parse command line arguments
+PREFIX=""
+SUFFIX=""
+DIR=""
+
+while [[ "$#" -gt 0 ]]; do
+    case $1 in
+    -p | --prefix)
+        PREFIX="$2"
+        shift
+        ;;
+    -s | --suffix)
+        SUFFIX="$2"
+        shift
+        ;;
+    -d | --dir)
+        DIR="$2"
+        shift
+        ;;
+    *)
+        echo "Unknown parameter: $1"
+        usage
+        ;;
+    esac
+    shift
+done
+
+# Validate input
+if [[ -z "$PREFIX" && -z "$SUFFIX" ]] || [[ -z "$DIR" ]]; then
+    echo "Error: Either --prefix or --suffix and --dir options are required."
+    usage
+fi
+
+if [[ ! -d "$DIR" ]]; then
+    echo "Error: Directory $DIR does not exist."
+    exit 1
+fi
+
+# Save the current directory
+ORIGINAL_DIR=$(pwd)
+
+# Change to the specified directory
+cd "$DIR" || {
+    echo "Error: Failed to change directory to $DIR."
+    exit 1
+}
+
+# Rename files
+for file in *; do
+    if [[ -e "$file" ]]; then
+        # Handle prefix removal
+        if [[ -n "$PREFIX" && "$file" == "$PREFIX"* ]]; then
+            new_name="${file#"$PREFIX"}"
+        # Handle suffix removal
+        elif [[ -n "$SUFFIX" ]]; then
+            extension="${file##*.}"
+            base="${file%.*}"
+            if [[ "$base" == *"$SUFFIX" ]]; then
+                base="${base%"$SUFFIX"}"
+                new_name="${base}.${extension}"
+            else
+                continue
+            fi
+        else
+            continue
+        fi
+        mv "$file" "$new_name"
+        echo "Renamed: '$file' -> '$new_name'"
+    fi
+done
+
+# Return to the original directory
+cd "$ORIGINAL_DIR" || exit
+
+echo "File renaming complete."
