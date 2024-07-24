@@ -8,10 +8,8 @@ docker
 visual-studio-code
 iterm2
 
-# Customization
+# Fonts
 
-zsh-syntax-highlighting
-zsh-autosuggestions
 font-fira-code
 font-hack-nerd-font # non-ASCII dev glyphs
 
@@ -31,13 +29,6 @@ google-chrome
 obsidian
 notion
 chatgpt
-
-# TypeScript development
-
-node
-nvm
-pnpm
-vercel-cli
 
 # Hobby
 

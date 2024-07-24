@@ -1,4 +1,11 @@
+# Command-line tools
+
 bash # use this in a script with #!/opt/homebrew/bin/bash
 zsh-syntax-highlighting
 zsh-autosuggestions
 zsh-completions
+
+# TypeScript development
+
+pnpm
+vercel-cli

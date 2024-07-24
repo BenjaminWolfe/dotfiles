@@ -39,6 +39,16 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 # Install Homebrew (before sourcing .zshrc)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Install nvm and load it into the current shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+
+# shellcheck source=/dev/null
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Then use nvm to install the latest LTS version of Node.js
+nvm install --lts
+
 # Add Homebrew taps from config/taps, skipping blanks and comments
 while IFS= read -r line || [ -n "$line" ]; do
   tap=$(echo "$line" | cut -d'#' -f1 | xargs)
