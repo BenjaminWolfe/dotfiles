@@ -21,6 +21,10 @@ loom
 zoom
 signal
 
+# Extra storage
+
+onedrive
+
 # Browsing
 
 google-chrome
