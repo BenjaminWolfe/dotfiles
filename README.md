@@ -75,6 +75,9 @@ Just start the application and sync the vault from there.
   - View & Sort: View as Tree
   - Repositories: Sort by Path
 - Mute audio notifications in Slack.
+- Toggl
+  - General: Open at Login
+  - Calendar: Activity Recording: Record active application and window
 
 ## Other Notes
 
