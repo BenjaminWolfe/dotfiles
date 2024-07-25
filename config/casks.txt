@@ -16,6 +16,7 @@ font-hack-nerd-font # non-ASCII dev glyphs
 # Communication and collaboration
 
 slack
+discord
 loom
 zoom
 signal
