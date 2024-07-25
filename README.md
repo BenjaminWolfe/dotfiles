@@ -17,13 +17,17 @@ Run [scripts/setup](scripts/setup) to set everything up!
   - Then **Workspace**
   - Then mouse over **Workspace** at the top until you see a little blue folder
   - Drag that blue folder over into the menu bar
-- Display the time with seconds in the menu bar (search for that phrase from Spotlight)
-- Customize modifier keys (search for that phrase from Spotlight)
+
+And for system settings, search Spotlight for...
+
+- _Display the time with seconds in the menu bar_
+- _Customize modifier keys_
   - If you're using a Das Keyboard, set Option to Command and Command to Option
-- Mouse sensitivity (search for that phrase from Spotlight): 7/10 for magic mouse or magic trackpad
-- Allow applications to update or delete other apps (search Spotlight for that phrase): VS Code
+- _Mouse sensitivity_: 7/10 for magic mouse or magic trackpad
+- _Mouse buttons_: set secondary click
+- _Allow applications to update or delete other apps_: VS Code
   - This lets you update applications via Homebrew from the integrated terminal
-- Search Spotlight for Dictation; turn it on, set the microphone, and set the shortcut
+- _Dictation_: turn it on, set the microphone, and set the shortcut
 
 ## License and Install: MS Office
 
@@ -37,6 +41,7 @@ then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
 - [Tableau][tableau]'s Homebrew cask is outdated. Use their download page instead.
 - [Toggl Track][toggl] is only available on the App Store.
 - If you're using the Insta360 Link camera, you'll have to [download that controller][insta360-link].
+  (I've since switched back to my Sony Alpha 6100 and Elgato CamLink 4K.)
 - You'll want to install **Chrome apps** like Messenger and possibly YouTube Music.
 
 ## Permissions
