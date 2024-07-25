@@ -20,6 +20,8 @@ Run [scripts/setup](scripts/setup) to set everything up!
 
 And for system settings, search Spotlight for...
 
+- _Allow applications to record your screen_: Slack and Zoom
+  - You'll need this before any conference calls!
 - _Display the time with seconds in the menu bar_
 - _Customize modifier keys_
   - If you're using a Das Keyboard, set Option to Command and Command to Option
@@ -46,9 +48,10 @@ then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
 
 ## Permissions
 
-Before you have any conference calls,
-search Spotlight for "Allow applications to record your screen"
-and toggle permissions on applications like Slack and Zoom.
+Discord will ask for permission to record keystrokes from other applications.
+You do _not_ have to allow that.
+That's for if you're gaming, and you want to start a call w/o leaving the game.
+Per [Reddit][reddit-keystrokes].
 
 ## License: Ableton Live Suite 11
 
@@ -94,3 +97,4 @@ Neither of them seem to be real issues, as the scripts run fine.
 [ms-licensing]: https://support.microsoft.com/en-us/office/transfer-your-office-license-to-another-device-or-another-person-8a967fb6-6c65-433e-800e-b9ae3436c2de
 [ms-uninstall]: https://support.microsoft.com/en-us/office/uninstall-office-for-mac-eefa1199-5b58-43af-8a3d-b73dc1a8cae3
 [ms-account]: https://account.microsoft.com/
+[reddit-keystrokes]: https://www.reddit.com/r/discordapp/comments/haygfd/why_is_discord_asking_permission_to_record_all_of/
