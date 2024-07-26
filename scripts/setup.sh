@@ -113,6 +113,13 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 5
 killall Dock
 
+# Dummy files: Use these to set the default applications for certain file types
+mkdir -p ~/.dotfiles/dummy_files
+touch ~/.dotfiles/dummy_files/dummy.csv
+
+# Open in Finder to make this easy to set up
+open ~/.dotfiles/dummy_files
+
 # Download & import iTerm's Atom color scheme (no sense keeping it in the repo)
 # Do this last since it opens iTerm and may require user interaction
 curl -o ~/.dotfiles/iterm2/colors/Atom.itermcolors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Atom.itermcolors

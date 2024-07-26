@@ -69,6 +69,20 @@ Just start the application and sync the vault from there.
 - Name it _Journal_ because that'll be the name of the folder Obsidian creates.
 - Place it in `~/Workspace`.
 
+## Default Applications by File Extension
+
+The [setup script](scripts/setup.sh) will have created a folder
+within this repository, called `dummy_files`,
+populated with any files worth associating with new applications (like `csv`).
+It will even have opened the folder in Finder!
+
+- Right-click on each file
+- Click **Open With** > **Other**
+- Click the application you want to use and check **Always Open With**
+- Hit **Open**
+
+Then feel free to close the file, delete it, and delete the whole folder when you're done with them.
+
 ## Other Customization
 
 - In the VS Code version control panel, next to the words `source control`,
