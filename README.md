@@ -76,12 +76,12 @@ within this repository, called `dummy_files`,
 populated with any files worth associating with new applications (like `csv`).
 It will even have opened the folder in Finder!
 
-- Right-click on each file
-- Click **Open With** > **Other**
-- Click the application you want to use and check **Always Open With**
-- Hit **Open**
+- Right-click on each file > **Get Info**
+- Under **Open with**, select the application you want to use
+- Click **Change All**, and **Continue** to confirm
 
-Then feel free to close the file, delete it, and delete the whole folder when you're done with them.
+Then feel free to close the _Get Info_ window, delete the file,
+and delete the whole folder when you're done with them.
 
 ## Other Customization
 
