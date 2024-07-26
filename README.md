@@ -30,6 +30,7 @@ And for system settings, search Spotlight for...
 - _Allow applications to update or delete other apps_: VS Code
   - This lets you update applications via Homebrew from the integrated terminal
 - _Dictation_: turn it on, set the microphone, and set the shortcut
+- _Spotlight search categories_: Applications and System Settings are all I use
 
 ## License and Install: MS Office
 
