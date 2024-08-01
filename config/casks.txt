@@ -24,6 +24,7 @@ discord
 loom
 zoom
 signal
+asana
 
 # Extra storage
 
