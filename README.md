@@ -100,6 +100,8 @@ and delete the whole folder when you're done with them.
 Sometimes on your old laptop, you'll have files in your working directory in local git repos.
 Just copy everything to an external HD before wiping.
 
+See [swagger.md](swagger.md) on why I clone the `swagger-ui` repo and how to use it.
+
 ## Repo Notes
 
 I can't seem to get rid of a couple spots VS Code is marking as issues:

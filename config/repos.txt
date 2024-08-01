@@ -1,1 +1,7 @@
+# Work product
+
 FinsureConsulting/faroe.git
+
+# To read Swagger JSON
+
+swagger-api/swagger-ui.git
