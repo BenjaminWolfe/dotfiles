@@ -53,6 +53,12 @@ then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
 
 ## Permissions
 
+In your 1Password settings, set _Security_ the way you like it:
+
+- Require password **Every 30 days** (like Signal)
+- Lock after the computer is idle for **Never** (since I keep it mostly at home)
+- Uncheck **Lock on sleep…** (since my laptop goes to sleep often)
+
 Discord will ask for permission to record keystrokes from other applications.
 You do _not_ have to allow that.
 That's for if you're gaming, and you want to start a call w/o leaving the game.
