@@ -46,7 +46,10 @@ then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
 - If you're using the Insta360 Link camera, you'll have to [download that controller][insta360-link].
   (I've since switched back to my Sony Alpha 6100 and Elgato CamLink 4K.)
 - You'll want to install **Chrome apps** like Messenger and possibly YouTube Music.
-- Find the download page for the [Epson WorkForce Pro WF-4833][epson-download] printer/scanner/copier, and download and install the software. You'll need this for scanning documents.
+- Find the download page for the [Epson WorkForce Pro WF-4833][epson-download] printer/scanner/copier,
+  and download and install the software. You'll need this for scanning documents.
+- Tableau uses Cisco [Webex][webex] for customer support,
+  which is installed seamlessly as part of a support session.
 
 ## Permissions
 
@@ -119,4 +122,5 @@ Neither of them seem to be real issues, as the scripts run fine.
 [ms-uninstall]: https://support.microsoft.com/en-us/office/uninstall-office-for-mac-eefa1199-5b58-43af-8a3d-b73dc1a8cae3
 [ms-account]: https://account.microsoft.com/
 [epson-download]: https://epson.com/Support/Printers/All-In-Ones/WorkForce-Series/Epson-WorkForce-Pro-WF-4833/s/SPT_C11CJ05202
+[webex]: https://www.webex.com/
 [reddit-keystrokes]: https://www.reddit.com/r/discordapp/comments/haygfd/why_is_discord_asking_permission_to_record_all_of/
