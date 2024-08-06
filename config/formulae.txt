@@ -9,3 +9,7 @@ zsh-completions
 
 pnpm
 vercel-cli
+
+# Data
+
+postgresql@14
