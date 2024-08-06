@@ -25,6 +25,7 @@ loom
 zoom
 signal
 asana
+webex # Tableau support sessions
 
 # Extra storage
 

@@ -20,8 +20,12 @@ Run [scripts/setup](scripts/setup) to set everything up!
 
 And for system settings, search Spotlight for...
 
-- _Allow applications to record your screen_: Slack and Zoom
-  - You'll need this before any conference calls!
+- _Allow applications to record your screen_: Zoom, Slack, Toggl, Chrome, Webex
+  - You'll need to add Zoom before any conference calls!
+  - Slack is for huddles and async screen-share videos
+  - Toggl is to make time tracking easier
+  - Chrome is for Google Meet, as well as in-browser Teams meetings
+  - Webex is for Tableau support sessions
 - _Display the time with seconds in the menu bar_
 - _Customize modifier keys_
   - If you're using a Das Keyboard, set Option to Command and Command to Option
@@ -46,8 +50,6 @@ then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
 - You'll want to install **Chrome apps** like Messenger and possibly YouTube Music.
 - Find the download page for the [Epson WorkForce Pro WF-4833][epson-download] printer/scanner/copier,
   and download and install the software. You'll need this for scanning documents.
-- Tableau uses Cisco [Webex][webex] for customer support,
-  which is installed seamlessly as part of a support session.
 
 ## Permissions
 
@@ -119,5 +121,4 @@ Neither of them seem to be real issues, as the scripts run fine.
 [ms-uninstall]: https://support.microsoft.com/en-us/office/uninstall-office-for-mac-eefa1199-5b58-43af-8a3d-b73dc1a8cae3
 [ms-account]: https://account.microsoft.com/
 [epson-download]: https://epson.com/Support/Printers/All-In-Ones/WorkForce-Series/Epson-WorkForce-Pro-WF-4833/s/SPT_C11CJ05202
-[webex]: https://www.webex.com/
 [reddit-keystrokes]: https://www.reddit.com/r/discordapp/comments/haygfd/why_is_discord_asking_permission_to_record_all_of/
