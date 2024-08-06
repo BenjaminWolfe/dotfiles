@@ -43,8 +43,6 @@ then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
 
 - [Tableau][tableau]'s Homebrew cask is outdated. Use their download page instead.
 - [Toggl Track][toggl] is only available on the App Store.
-- If you're using the Insta360 Link camera, you'll have to [download that controller][insta360-link].
-  (I've since switched back to my Sony Alpha 6100 and Elgato CamLink 4K.)
 - You'll want to install **Chrome apps** like Messenger and possibly YouTube Music.
 - Find the download page for the [Epson WorkForce Pro WF-4833][epson-download] printer/scanner/copier,
   and download and install the software. You'll need this for scanning documents.
@@ -117,7 +115,6 @@ Neither of them seem to be real issues, as the scripts run fine.
 [edc]: https://en.wikipedia.org/wiki/Everyday_carry
 [tableau]: https://www.tableau.com/support/releases/desktop/2024.2#esdalt
 [toggl]: https://apps.apple.com/us/app/toggl-track-hours-time-log/id1291898086
-[insta360-link]: https://www.insta360.com/download/insta360-link
 [ms-licensing]: https://support.microsoft.com/en-us/office/transfer-your-office-license-to-another-device-or-another-person-8a967fb6-6c65-433e-800e-b9ae3436c2de
 [ms-uninstall]: https://support.microsoft.com/en-us/office/uninstall-office-for-mac-eefa1199-5b58-43af-8a3d-b73dc1a8cae3
 [ms-account]: https://account.microsoft.com/
