@@ -36,6 +36,22 @@ And for system settings, search Spotlight for...
 - _Dictation_: turn it on, set the microphone, and set the shortcut
 - _Spotlight search categories_: Applications and System Settings are all I use
 
+## 1Password
+
+It's easiest to set up 1Password from your phone:
+
+- Log in (fingerprint)
+- In the upper right, go to each account, business and home, in turn
+- For each, also in the upper right, go to _Set Up Another Device_
+- Copy the secret key
+- On your Mac, you may want to sign in in Chrome as well as the app
+
+Then in the app, under Settings, set _Security_ the way you like it:
+
+- Require password **Every 30 days** (like Signal)
+- Lock after the computer is idle for **Never** (since I keep it mostly at home)
+- Uncheck **Lock on sleep…** (since my laptop goes to sleep often)
+
 ## License and Install: MS Office
 
 [Per Microsoft][ms-licensing], you can only have Microsoft Office on one device at a time.
@@ -51,13 +67,7 @@ then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
 - Find the download page for the [Epson WorkForce Pro WF-4833][epson-download] printer/scanner/copier,
   and download and install the software. You'll need this for scanning documents.
 
-## Permissions
-
-In your 1Password settings, set _Security_ the way you like it:
-
-- Require password **Every 30 days** (like Signal)
-- Lock after the computer is idle for **Never** (since I keep it mostly at home)
-- Uncheck **Lock on sleep…** (since my laptop goes to sleep often)
+## Permissions: Discord
 
 Discord will ask for permission to record keystrokes from other applications.
 You do _not_ have to allow that.
