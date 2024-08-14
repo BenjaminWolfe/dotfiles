@@ -52,6 +52,31 @@ Then in the app, under Settings, set _Security_ the way you like it:
 - Lock after the computer is idle for **Never** (since I keep it mostly at home)
 - Uncheck **Lock on sleep…** (since my laptop goes to sleep often)
 
+Then set up 1Password CLI.
+In the app, in the upper left, click **Settings** > **Developer**,
+and check **Integrate with 1Password CLI**.
+
+## Insomnia
+
+- Open Insomnia and log in via GitHub.
+- Open **Preferences** > **Plugins** > **Browse Plugin Hub**
+- Enter `insomnia-plugin-op` and click **Install Plugin**
+- On the main Insomnia screen, pick a workspace
+- At the bottom left, click the **+** next to **Environments** to add one;
+  call it `base` or anything you like
+- Tell the plugin where to find 1Password by replacing the blank `{}` with this:
+
+  ```
+  {
+    "__op_plugin": {
+      "cliPath": "/opt/homebrew/bin/op"
+    }
+  }
+  ```
+
+See [how_to/insomnia_1password.md](how_to/insomnia_1password.md) for more
+on how to take advantage of this integration.
+
 ## License and Install: MS Office
 
 [Per Microsoft][ms-licensing], you can only have Microsoft Office on one device at a time.

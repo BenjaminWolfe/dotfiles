@@ -11,6 +11,7 @@ rectangle
 docker
 visual-studio-code
 iterm2
+insomnia
 
 # Fonts
 

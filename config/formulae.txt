@@ -5,6 +5,10 @@ zsh-syntax-highlighting
 zsh-autosuggestions
 zsh-completions
 
+# Credential management
+
+1password-cli
+
 # TypeScript development
 
 pnpm
