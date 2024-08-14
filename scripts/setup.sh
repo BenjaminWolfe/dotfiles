@@ -7,7 +7,7 @@ set -o pipefail # Exit if any part of a pipeline fails.
 xcode-select --install
 
 # Define the list of dotfiles and their linked locations
-dotfiles=(".zshrc" ".p10k.zsh" ".gitconfig" ".gitignore_global")
+dotfiles=(".zshrc" ".p10k.zsh" ".gitconfig" ".gitignore_global" ".jq")
 vscode_dotfiles=("settings.json" "keybindings.json")
 vscode_directory="$HOME/Library/Application Support/Code/User"
 
@@ -69,6 +69,13 @@ while IFS= read -r line || [ -n "$line" ]; do
   [ -z "$formula" ] && continue
   brew install "$formula"
 done <~/.dotfiles/config/formulae.txt
+
+# Install go projects config/go_install, skipping blanks and comments
+while IFS= read -r line || [ -n "$line" ]; do
+  project=$(echo "$line" | cut -d'#' -f1 | xargs)
+  [ -z "$project" ] && continue
+  go install -v "$project"
+done <~/.dotfiles/config/go_install.txt
 
 # Install VS Code extensions from vscode/extensions, skipping blanks and comments
 # TODO: Look into whether it's OK to run VS Code programatically before opening

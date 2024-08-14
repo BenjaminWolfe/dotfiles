@@ -4,6 +4,8 @@ bash # use this in a script with #!/opt/homebrew/bin/bash
 zsh-syntax-highlighting
 zsh-autosuggestions
 zsh-completions
+jq
+miller
 
 # Credential management
 
@@ -17,3 +19,7 @@ vercel-cli
 # Data
 
 postgresql@14
+
+# Installing FOSS Projects
+
+go

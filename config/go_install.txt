@@ -1,0 +1,1 @@
+github.com/noperator/jqfmt/cmd/jqfmt@latest # format jq scripts
