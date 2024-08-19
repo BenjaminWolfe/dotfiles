@@ -130,7 +130,8 @@ and delete the whole folder when you're done with them.
 
 ## Other Customization
 
-- In the VS Code version control panel, next to the words `source control`,
+- In the VS Code version control panel, next to the words `source control`
+  (not next to `source control repositories` or next to the name of each repo),
   click the 3 dots, and choose:
   - View & Sort: View as Tree
   - Repositories: Sort by Path
