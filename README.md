@@ -141,14 +141,16 @@ It will even have opened the folder in Finder!
 Then feel free to close the _Get Info_ window, delete the file,
 and delete the whole folder when you're done with them.
 
-## Other Customization
+## Other App Customization
 
-- In the VS Code version control panel, next to the words `source control`
-  (not next to `source control repositories` or next to the name of each repo),
-  click the 3 dots, and choose:
-  - View & Sort: View as Tree
-  - Repositories: Sort by Path
-- Mute audio notifications in Slack.
+- VS Code
+  - In the version control panel
+    - Next to **Source Control Repositories**
+      - Three dots > **Sort by Name** just because it puts this repo at the top
+    - Next to **Source Control** (below **Source Control Repositories**)
+      - Three dots > **View & Sort**: **View as Tree**
+- Slack
+  - Mute audio notifications
 - Toggl
   - General: Open at Login
   - Calendar: Activity Recording: Record active application and window
