@@ -35,6 +35,19 @@ And for system settings, search Spotlight for...
   - This lets you update applications via Homebrew from the integrated terminal
 - _Dictation_: turn it on, set the microphone, and set the shortcut
 - _Spotlight search categories_: Applications and System Settings are all I use
+- _Internet accounts_: Add Google account for Calendars
+  - This will use Safari to authenticate; resist adding 1Password for Safari
+    as it's a very poorly reviewed app
+  - The whole purpose of this is for rare cases
+    where you have to open an `invite.ics` file (see below)
+
+## Calendar
+
+- Open the Calendar app and hit **⌘,** for preferences
+- Under **General**, for **Default Calendar** choose _Benjamin_ from _Google_
+  or wherever you want `invite.ics` files to be added by default
+- Under **Accounts**, disable iCloud
+- Under **Alerts**, just uncheck everything
 
 ## 1Password
 
