@@ -26,6 +26,13 @@ And for system settings, search Spotlight for...
   - Toggl is to make time tracking easier
   - Chrome is for Google Meet, as well as in-browser Teams meetings
   - Webex is for Tableau support sessions
+- _Control center_
+  - Scroll down to _Automatically hide and show the menu bar_ > **Never**
+    - This is critical so you can see the time when you're in another workspace
+      (to combat timeblindness!)
+- _Login items_: Loom, Rectangle
+  - On the same screen, under _Allow in the background_, disable Epson apps
+    (Epson turns on 3 by default!)
 - _Display the time with seconds in the menu bar_
 - _Customize modifier keys_
   - If you're using a Das Keyboard, set Option to Command and Command to Option
@@ -34,6 +41,8 @@ And for system settings, search Spotlight for...
 - _Allow applications to update or delete other apps_: VS Code
   - This lets you update applications via Homebrew from the integrated terminal
 - _Dictation_: turn it on, set the microphone, and set the shortcut
+  (I like to use "Press the Control key twice")
+  - On the same screen, turn off _Auto-punctuation_
 - _Spotlight search categories_: Applications and System Settings are all I use
 - _Internet accounts_: Add Google account for Calendars
   - This will use Safari to authenticate; resist adding 1Password for Safari
@@ -143,6 +152,10 @@ and delete the whole folder when you're done with them.
 
 ## Other App Customization
 
+- Rectangle
+  - Launch on login
+    - (This may not be needed if you set it in System Preferences!
+      Come back and update this if you find that's the case)
 - VS Code
   - In the version control panel
     - Next to **Source Control Repositories**
