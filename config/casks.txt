@@ -35,6 +35,7 @@ onedrive
 # Browsing
 
 google-chrome
+firefox # temp? experimental; for ACL YouTube playlist editing
 
 # Second brain and AI
 
