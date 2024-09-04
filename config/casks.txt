@@ -13,6 +13,9 @@ visual-studio-code
 iterm2
 insomnia
 
+# DB work
+dbeaver-community
+
 # Fonts
 
 font-fira-code
