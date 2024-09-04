@@ -78,6 +78,9 @@ Then set up 1Password CLI.
 In the app, in the upper left, click **Settings** > **Developer**,
 and check **Integrate with 1Password CLI**.
 
+To really enjoy 1Password, I also [hobbled Google Password Manager][1password-chrome-cleanup]
+so it wouldn't get in the way!
+
 ## Insomnia
 
 - Open Insomnia and log in via GitHub.
@@ -187,6 +190,7 @@ Neither of them seem to be real issues, as the scripts run fine.
 [edc]: https://en.wikipedia.org/wiki/Everyday_carry
 [tableau]: https://www.tableau.com/support/releases/desktop/2024.2#esdalt
 [toggl]: https://apps.apple.com/us/app/toggl-track-hours-time-log/id1291898086
+[1password-chrome-cleanup]: https://support.1password.com/disable-browser-password-manager/
 [ms-licensing]: https://support.microsoft.com/en-us/office/transfer-your-office-license-to-another-device-or-another-person-8a967fb6-6c65-433e-800e-b9ae3436c2de
 [ms-uninstall]: https://support.microsoft.com/en-us/office/uninstall-office-for-mac-eefa1199-5b58-43af-8a3d-b73dc1a8cae3
 [ms-account]: https://account.microsoft.com/
