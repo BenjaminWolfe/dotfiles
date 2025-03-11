@@ -40,7 +40,8 @@ Pull in this repo:
 GH_USERNAME="BenjaminWolfe"
 
 cd ~
-git clone git@github.com:$GH_USERNAME/everyday-carry.git
+git clone git@github.com:$GH_USERNAME/dotfiles.git .dotfiles
+cd .dotfiles
 git checkout main
 git pull
 ```
