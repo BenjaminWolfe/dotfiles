@@ -1,5 +1,32 @@
 #!/bin/bash
 
+# Function to check if sudo timestamp is still fresh
+check_sudo() {
+  sudo -n true 2>/dev/null
+  return $?
+}
+
+# Function to get sudo credentials upfront
+get_sudo_credentials() {
+  echo "Some installations may require sudo access."
+  echo "Please enter your password to prevent interruptions:"
+  sudo -v
+
+  # Keep sudo timestamp fresh in the background
+  while true; do
+    sleep 60
+    check_sudo || break
+    sudo -v
+  done &
+  SUDO_KEEPER_PID=$!
+
+  # Ensure we kill the sudo-keeping process on script exit
+  trap 'kill $SUDO_KEEPER_PID' EXIT
+}
+
+# Initialize sudo session at the start
+get_sudo_credentials
+
 set -e          # Exit immediately if a command exits with a non-zero status.
 set -o pipefail # Exit if any part of a pipeline fails.
 
@@ -53,21 +80,32 @@ nvm install --lts
 while IFS= read -r line || [ -n "$line" ]; do
   tap=$(echo "$line" | cut -d'#' -f1 | xargs)
   [ -z "$tap" ] && continue
-  brew tap "$tap"
+  echo "Tapping: $tap"
+  brew tap "$tap" || echo "Failed to tap: $tap"
 done <~/.dotfiles/config/taps.txt
 
 # Install Homebrew casks from config/casks, skipping blanks and comments
 while IFS= read -r line || [ -n "$line" ]; do
   cask=$(echo "$line" | cut -d'#' -f1 | xargs)
   [ -z "$cask" ] && continue
-  brew install --cask "$cask"
+  echo "Installing cask: $cask"
+  HOMEBREW_NO_AUTO_UPDATE=1 brew install --cask "$cask" || {
+    echo "Failed to install cask: $cask"
+    # Optionally maintain a log of failed installations
+    echo "$cask" >>~/.dotfiles/failed_installations.txt
+  }
 done <~/.dotfiles/config/casks.txt
 
 # Install Homebrew formulae from config/formulae, skipping blanks and comments
 while IFS= read -r line || [ -n "$line" ]; do
   formula=$(echo "$line" | cut -d'#' -f1 | xargs)
   [ -z "$formula" ] && continue
-  brew install "$formula"
+  echo "Installing formula: $formula"
+  HOMEBREW_NO_AUTO_UPDATE=1 brew install "$formula" || {
+    echo "Failed to install formula: $formula"
+    # Optionally maintain a log of failed installations
+    echo "$formula" >>~/.dotfiles/failed_installations.txt
+  }
 done <~/.dotfiles/config/formulae.txt
 
 # Install go projects config/go_install, skipping blanks and comments
@@ -131,3 +169,10 @@ open ~/.dotfiles/dummy_files
 # Do this last since it opens iTerm and may require user interaction
 curl -o ~/.dotfiles/iterm2/colors/Atom.itermcolors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Atom.itermcolors
 open "$HOME/.dotfiles/iterm2/colors/Atom.itermcolors"
+
+# If we maintained a failed homebrew installations log, check it
+if [ -f ~/.dotfiles/failed_installations.txt ]; then
+  echo "The following homebrew installations failed:"
+  cat ~/.dotfiles/failed_installations.txt
+  echo "You may want to try installing these packages manually."
+fi
