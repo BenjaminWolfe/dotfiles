@@ -5,6 +5,9 @@
 # User experience
 
 rectangle
+karabiner-elements
+lunar
+logi-options+
 
 # Development
 
@@ -13,8 +16,10 @@ visual-studio-code
 iterm2
 insomnia
 
-# DB work
+# DB and data work
 dbeaver-community
+rstudio
+quarto
 
 # Fonts
 
@@ -49,3 +54,7 @@ chatgpt
 # Hobby
 
 ableton-live-suite@11
+
+# Entertainment
+
+spotify
