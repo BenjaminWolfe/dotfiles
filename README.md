@@ -49,6 +49,21 @@ And for system settings, search Spotlight for...
     as it's a very poorly reviewed app
   - The whole purpose of this is for rare cases
     where you have to open an `invite.ics` file (see below)
+- _Night Shift options_: Schedule: Sunset to Sunrise
+
+To change default applications for opening a file type,
+find one of those files, right-click, "Get Info," "Open with,"
+choose the application, and click "Change All."
+
+In icon views in Finder, those files still may show the wrong application.
+To fix that, then run these lines:
+
+```sh
+sudo rm -rf /Library/Caches/com.apple.iconservices.store
+sudo killall Finder
+```
+
+I've had to do this for TypeScript files, as `.ts` is also a video format.
 
 ## Calendar
 
@@ -154,6 +169,19 @@ Then feel free to close the _Get Info_ window, delete the file,
 and delete the whole folder when you're done with them.
 
 ## Other App Customization
+
+Allow assistive applications to control the computer
+iTerm
+Logi Options+
+Loom
+Lunar
+Rectangle
+Visual Studio Code
+
+Allow applications to monitor keyboard input
+Logi Options+
+
+https://support.logi.com/hc/en-us/articles/360035271133-Getting-Started-MX-Master-3
 
 - Rectangle
   - Launch on login
