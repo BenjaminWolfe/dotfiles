@@ -5,5 +5,17 @@
         "key": "cmd+enter",
         "command": "sqltools.executeCurrentQuery",
         "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+      "key": "alt+-",
+      "command": "type",
+      "args": { "text": " <- " },
+      "when": "editorTextFocus && (editorLangId == 'r' || editorLangId == 'rmd' || editorLangId == 'quarto')"
+    },
+    {
+      "key": "ctrl+cmd+m",  // Use cmd+shift+m was already taken
+      "command": "type",
+      "args": { "text": " |>" },
+      "when": "editorTextFocus && (editorLangId == 'r' || editorLangId == 'rmd' || editorLangId == 'quarto')"
     }
 ]

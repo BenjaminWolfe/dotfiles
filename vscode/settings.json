@@ -16,11 +16,12 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "workbench.colorTheme": "Atom One Dark",
+  "editor.insertSpaces": true,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [
     80
   ],
-  "editor.formatOnSave": true,
+  // "editor.formatOnSave": true,
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.defaultProfile.osx": "zsh",
@@ -38,7 +39,8 @@
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.tabSize": 4
   },
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format",
@@ -55,13 +57,16 @@
     "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -72,9 +77,18 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
+  "r.rterm.mac": "/Users/benjamin/.local/bin/radian",
+  "quarto.path": "/usr/local/bin/quarto",
+  "draw.folder.structure.exclude": [
+    "**/node_modules",
+    "**/*.git",
+    "**/dist",
+    "**/*.next",
+    "**/out"
+  ],
+  // "[html]": {
+  //   "editor.defaultFormatter": "vscode.html-language-features"
+  // },
   // Python-specific settings
   "python.formatting.provider": "black",
   // SQL-specific settings
@@ -89,5 +103,7 @@
   "prisma.showPrismaDataPlatformNotification": false,
   // ShellCheck settings
   "shellcheck.enable": true,
-  "shellcheck.run": "onType"
+  "shellcheck.run": "onType",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2
 }
