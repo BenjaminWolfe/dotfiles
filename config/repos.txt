@@ -1,7 +1,6 @@
 # Work product
 
-FinsureConsulting/faroe.git
-
-# To read Swagger JSON
-
-swagger-api/swagger-ui.git
+PalomarSpecialty/Data-Team
+PalomarSpecialty/Data-Dbt-ETL
+PalomarSpecialty/DataSchemaChange
+PalomarSpecialty/palomar_flowmate

@@ -7,24 +7,6 @@ zsh-completions
 jq
 miller
 
-# Credential management
-
-1password-cli
-
-# TypeScript development
-
-pnpm
-vercel-cli
-
 # Data
 
-postgresql@14
 r
-
-# Installing FOSS Projects
-
-go
-
-# Photo GPS extraction
-
-exiftool

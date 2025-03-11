@@ -11,13 +11,10 @@ logi-options+
 
 # Development
 
-docker
 visual-studio-code
 iterm2
-insomnia
 
 # DB and data work
-dbeaver-community
 rstudio
 quarto
 
@@ -28,32 +25,15 @@ font-hack-nerd-font # non-ASCII dev glyphs
 
 # Communication and collaboration
 
-slack
 discord
 loom
 zoom
 signal
-asana
-webex # Tableau support sessions
 
-# Extra storage
-
-onedrive
-
-# Browsing
-
-google-chrome
-firefox # temp? experimental; for ACL YouTube playlist editing
-
-# Second brain and AI
+# Second brain
 
 obsidian
 notion
-chatgpt
-
-# Hobby
-
-ableton-live-suite@11
 
 # Entertainment
 
