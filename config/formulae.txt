@@ -19,7 +19,12 @@ vercel-cli
 # Data
 
 postgresql@14
+r
 
 # Installing FOSS Projects
 
 go
+
+# Photo GPS extraction
+
+exiftool
