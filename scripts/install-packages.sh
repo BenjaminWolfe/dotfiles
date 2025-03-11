@@ -30,9 +30,9 @@ if file_exists_with_content "$HOME/.dotfiles/config/taps.txt"; then
     echo "Tapping: $tap"
     brew tap "$tap" || {
       echo "Failed to tap: $tap"
-      echo "tap: $tap" >> "$failed_log"
+      echo "tap: $tap" >>"$failed_log"
     }
-  done < "$HOME/.dotfiles/config/taps.txt"
+  done <"$HOME/.dotfiles/config/taps.txt"
 else
   echo "No taps file found at $HOME/.dotfiles/config/taps.txt, skipping."
 fi
@@ -46,9 +46,9 @@ if file_exists_with_content "$HOME/.dotfiles/config/casks.txt"; then
     echo "Installing cask: $cask"
     HOMEBREW_NO_AUTO_UPDATE=1 brew install --cask "$cask" || {
       echo "Failed to install cask: $cask"
-      echo "cask: $cask" >> "$failed_log"
+      echo "cask: $cask" >>"$failed_log"
     }
-  done < "$HOME/.dotfiles/config/casks.txt"
+  done <"$HOME/.dotfiles/config/casks.txt"
 else
   echo "No casks file found at $HOME/.dotfiles/config/casks.txt, skipping."
 fi
@@ -62,32 +62,11 @@ if file_exists_with_content "$HOME/.dotfiles/config/formulae.txt"; then
     echo "Installing formula: $formula"
     HOMEBREW_NO_AUTO_UPDATE=1 brew install "$formula" || {
       echo "Failed to install formula: $formula"
-      echo "formula: $formula" >> "$failed_log"
+      echo "formula: $formula" >>"$failed_log"
     }
-  done < "$HOME/.dotfiles/config/formulae.txt"
+  done <"$HOME/.dotfiles/config/formulae.txt"
 else
   echo "No formulae file found at $HOME/.dotfiles/config/formulae.txt, skipping."
-fi
-
-# Check if Go is installed before trying to install Go packages
-if command -v go &>/dev/null; then
-  # Install go projects from config/go_install
-  echo "Installing Go packages..."
-  if file_exists_with_content "$HOME/.dotfiles/config/go_install.txt"; then
-    while IFS= read -r line || [ -n "$line" ]; do
-      project=$(echo "$line" | cut -d'#' -f1 | xargs)
-      [ -z "$project" ] && continue
-      echo "Installing Go package: $project"
-      go install -v "$project" || {
-        echo "Failed to install Go package: $project"
-        echo "go package: $project" >> "$failed_log"
-      }
-    done < "$HOME/.dotfiles/config/go_install.txt"
-  else
-    echo "No Go packages file found at $HOME/.dotfiles/config/go_install.txt, skipping."
-  fi
-else
-  echo "Go is not installed, skipping Go packages installation."
 fi
 
 echo "Homebrew packages installation complete."
