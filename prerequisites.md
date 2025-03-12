@@ -28,6 +28,9 @@ pbcopy < ~/.ssh/$SSH_KEY_FILENAME.pub
 This will copy the key to your clipboard.
 Paste it into [GitHub](https://github.com/settings/keys).
 
+While on the page, click "**Configure SSO**" next to the key you just added,
+select **PalomarSpecialty**, and use SSO to authorize the key.
+
 Then:
 
 ```sh
