@@ -50,7 +50,7 @@ echo "Downloading Atom color scheme for iTerm2..."
 curl -o "$HOME/.dotfiles/iterm2/colors/Atom.itermcolors" https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Atom.itermcolors
 
 # Ask if user wants to open the color scheme
-read -r -p "Do you want to open the Atom color scheme in iTerm2? (y/n): " open_colors
+read -r -p "Do you want to open the Atom color scheme in iTerm2? (y/n) (Note, if you say yes and then it says you already have Atom, it's OK to skip): " open_colors
 if [[ $open_colors =~ ^[Yy]$ ]]; then
   open "$HOME/.dotfiles/iterm2/colors/Atom.itermcolors"
 fi
