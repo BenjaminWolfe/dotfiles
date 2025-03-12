@@ -13,6 +13,10 @@ cd ~/.dotfiles/scripts
 ./main-setup.sh
 ```
 
+You can then double-click on `~/.dotfiles/vscode/palomar.code-workspace`
+straight from Finder and it should open VS Code to a workspace
+of all the relevant repos.
+
 ## OS Customization
 
 - Add your home directory to the Finder: **Finder** > **⌘,** > **Sidebar** > your username

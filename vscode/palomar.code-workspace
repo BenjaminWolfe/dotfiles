@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Workspace/Data-Team"
+		},
+		{
+			"path": "../../Workspace/Data-Dbt-ETL"
+		},
+		{
+			"path": "../../Workspace/DataSchemaChange"
+		},
+		{
+			"path": "../../Workspace/palomar_flowmate"
+		}
+	],
+  "settings": {}
+}
