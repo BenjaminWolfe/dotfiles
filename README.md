@@ -13,8 +13,6 @@ cd ~/.dotfiles/scripts
 ./main-setup.sh
 ```
 
-**Note:** As of 2024-07-23, I haven't actually tested this script end to end.
-
 ## OS Customization
 
 - Add your home directory to the Finder: **Finder** > **⌘,** > **Sidebar** > your username
