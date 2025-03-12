@@ -8,32 +8,8 @@ if [ ! -d "$HOME/.dotfiles" ]; then
   exit 1
 fi
 
-# Function to check if sudo timestamp is still fresh
-check_sudo() {
-  sudo -n true 2>/dev/null
-  return $?
-}
-
-# Function to get sudo credentials upfront
-get_sudo_credentials() {
-  echo "Some installations may require sudo access."
-  echo "Please enter your password to prevent interruptions:"
-  sudo -v
-
-  # Keep sudo timestamp fresh in the background
-  while true; do
-    sleep 60
-    check_sudo || break
-    sudo -v
-  done &
-  SUDO_KEEPER_PID=$!
-
-  # Ensure we kill the sudo-keeping process on script exit
-  trap 'kill $SUDO_KEEPER_PID' EXIT
-}
-
-# Initialize sudo session at the start
-get_sudo_credentials
+echo "Some installations may require sudo access."
+echo "Sit tight and enter your credentials; we could not find a reliable way around it."
 
 set -e          # Exit immediately if a command exits with a non-zero status.
 set -o pipefail # Exit if any part of a pipeline fails.
