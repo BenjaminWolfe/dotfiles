@@ -147,12 +147,6 @@ You do _not_ have to allow that.
 That's for if you're gaming, and you want to start a call w/o leaving the game.
 Per [Reddit][reddit-keystrokes].
 
-## License: Ableton Live Suite 11
-
-You'll have installed Ableton from the automated setup script above.
-An Ableton license allows installation on 2 devices simultaneously.
-I haven't yet had to de-authorize it from an old device.
-
 ## Sync: Obsidian
 
 Use Obsidian, rather than GitHub, for the initial Journal sync.
