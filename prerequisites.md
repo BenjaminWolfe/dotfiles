@@ -8,8 +8,8 @@ Set up git with your name and email and a new SSH key:
 
 ```sh
 GITHUB_NAME="Benjamin Wolfe"
-GITHUB_EMAIL="benjamin.e.wolfe@gmail.com"
-SSH_KEY_FILENAME="github_macbookair"
+GITHUB_EMAIL="bwolfe@plmr.com"
+SSH_KEY_FILENAME="github_plmr_macbook"
 
 git config --global user.name "$GITHUB_NAME"
 git config --global user.email "$GITHUB_EMAIL"

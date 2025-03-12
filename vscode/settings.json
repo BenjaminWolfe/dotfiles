@@ -77,7 +77,7 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "r.rterm.mac": "/Users/benjamin/.local/bin/radian",
+  "r.rterm.mac": "/Users/bwolfe/.local/bin/radian",
   "quarto.path": "/usr/local/bin/quarto",
   "draw.folder.structure.exclude": [
     "**/node_modules",
@@ -93,9 +93,9 @@
   "python.formatting.provider": "black",
   // SQL-specific settings
   // TODO add .sqlfluff config to MacBook Air
-  "sqlfluff.config": "/home/benjamin/.sqlfluff",
+  "sqlfluff.config": "/Users/bwolfe/.sqlfluff",
   "sqltools.results.reuseTabs": "connection",
-  "snowflake.connectionsConfigFile": "/Users/benjamin/.snowflake/connections.toml",
+  "snowflake.connectionsConfigFile": "/Users/bwolfe/.snowflake/connections.toml",
   // Other settings
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
