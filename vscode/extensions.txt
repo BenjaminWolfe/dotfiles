@@ -24,7 +24,6 @@ github.copilot-chat # AI-assisted code discussions.
 
 # TypeScript and JavaScript
 dbaeumer.vscode-eslint # Linting for JavaScript and TypeScript.
-prisma.prisma # Prisma ORM support.
 
 # Python
 ms-python.python # Python support.
@@ -39,7 +38,6 @@ ms-python.isort # Sorts Python imports.
 
 # SQL
 mtxr.sqltools # SQL management tool.
-mtxr.sqltools-driver-pg # PostgreSQL driver for SQLTools.
 snowflake.snowflake-vsc # Snowflake integration.
 dorzey.vscode-sqlfluff # Linting with SQLFluff.
 inferrinizzard.prettier-sql-vscode # SQL formatting with Prettier.
@@ -54,10 +52,6 @@ foxundermoon.shell-format # Shell script formatting.
 aykutsarac.jsoncrack-vscode # Visualizes JSON data structures.
 nidu.copy-json-path # Copies JSON paths.
 redhat.vscode-yaml # YAML support.
-quicktype.quicktype # Generates types and converters from JSON.
-
-# Testing
-firsttris.vscode-jest-runner # Jest test runner.
 
 # Miscellaneous
 joffreykern.markdown-toc # Generates table of contents for Markdown files.
