@@ -93,7 +93,7 @@
   "snowflake.connectionsConfigFile": "/Users/bwolfe/.snowflake/connections.toml",
   // Other settings
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "workbench.editor.empty.hint": "hidden",
   "prisma.showPrismaDataPlatformNotification": false,
   // ShellCheck settings
