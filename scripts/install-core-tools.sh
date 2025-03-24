@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to install core tools: Xcode CLI, Homebrew, Oh My Zsh, NVM
+# Script to install core tools: Xcode CLI, Homebrew, Oh My Zsh
 
 set -e          # Exit immediately if a command exits with a non-zero status.
 set -o pipefail # Exit if any part of a pipeline fails.
@@ -57,29 +57,7 @@ else
   fi
 fi
 
-# Install NVM (Node Version Manager)
-echo "Installing NVM..."
-if [ ! -d "$HOME/.nvm" ]; then
-  echo "NVM not found. Installing..."
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-  
-  # Set up NVM in the current shell
-  export NVM_DIR="$HOME/.nvm"
-  # shellcheck source=/dev/null
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  
-  # Install latest LTS version of Node.js
-  nvm install --lts
-else
-  echo "NVM already installed."
-  # Set up NVM in the current shell
-  export NVM_DIR="$HOME/.nvm"
-  # shellcheck source=/dev/null
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  
-  # Update to latest LTS version
-  echo "Updating to latest LTS version of Node.js..."
-  nvm install --lts
-fi
+# NVM and Node blocked by ThreatLocker (IT) and not currently needed at work
+# so skipped here
 
 echo "Core tools installation complete."

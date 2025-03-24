@@ -2,8 +2,7 @@
   // Git settings
   "git.ignoredRepositories": [
     ".oh-my-zsh",
-    ".oh-my-zsh/custom/themes/powerlevel10k/",
-    ".nvm"
+    ".oh-my-zsh/custom/themes/powerlevel10k/"
   ],
   "git.autofetch": true,
   "git.untrackedChanges": "separate",
@@ -80,7 +79,6 @@
   "r.rterm.mac": "/Users/bwolfe/.local/bin/radian",
   "quarto.path": "/usr/local/bin/quarto",
   "draw.folder.structure.exclude": [
-    "**/node_modules",
     "**/*.git",
     "**/dist",
     "**/*.next",
