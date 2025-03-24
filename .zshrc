@@ -1,3 +1,7 @@
+## If ThreatLocker blocks ~/.cache/gitstatus/gitstatusd-darwin-arm64,
+## request an exception and uncomment the line below in the meantime:
+# export POWERLEVEL9K_GITSTATUS_DAEMON=false
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
