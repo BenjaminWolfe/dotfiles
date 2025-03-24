@@ -33,24 +33,21 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "interactiveWindow.executeWithShiftEnter": true,
   // Language-specific formatter settings
-  "[ignore]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true,
     "editor.tabSize": 4
   },
   "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format",
-    "editor.formatOnSave": true,
+    "editor.defaultFormatter": null,
     "editor.defaultFormatterSettings": {
       "singleQuote": true
     },
-    "editor.lintingEnabled": true
+    "editor.lintingEnabled": true,
+    "editor.formatOnType": false
   },
   "[dotenv]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": null
   },
   "[sql]": {
     "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
