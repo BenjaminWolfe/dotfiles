@@ -7,7 +7,7 @@ Before walking through these, follow the steps from the [README](readme.md).
 - Add your home directory to the Finder: **Finder** > **⌘,** > **Sidebar** > your username
 - Add the Workspace directory to the Finder:
   - Click on your username that's now showing
-  - Then **Workspace**
+  - Then double-click the **Workspace** folder
   - Then mouse over **Workspace** at the top until you see a little blue folder
   - Drag that blue folder over into the menu bar
 
