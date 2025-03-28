@@ -13,12 +13,10 @@ Before walking through these, follow the steps from the [README](readme.md).
 
 And for system settings, search Spotlight for...
 
-- _Allow applications to record your screen_: Zoom, Slack, Toggl, Chrome, Webex
-  - You'll need to add Zoom before any conference calls!
-  - Slack is for huddles and async screen-share videos
-  - Toggl is to make time tracking easier
-  - Chrome is for Google Meet, as well as in-browser Teams meetings
-  - Webex is for Tableau support sessions
+- _Allow applications to record your screen_: Any applications that make sense
+  - Conference calling apps like Zoom, Teams, and Slack (Slack also for videos)
+  - Remember Google Meet meetings happen in Chrome
+  - Toggl, if applicable, to make time-tracking easier
 - _Control center_
   - Scroll down to _Automatically hide and show the menu bar_ > **Never**
     - This is critical so you can see the time when you're in another workspace
