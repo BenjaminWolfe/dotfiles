@@ -17,30 +17,45 @@ And for system settings, search Spotlight for...
   - Conference calling apps like Zoom, Teams, and Slack (Slack also for videos)
   - Remember Google Meet meetings happen in Chrome
   - Toggl, if applicable, to make time-tracking easier
+- _Allow assistive applications to control the computer_: At least the following
+  - iTerm
+  - Logi Options+
+  - Loom, if applicable
+  - Lunar
+  - Rectangle
+  - Visual Studio Code
+  - It seems it also tends to add conference apps like Zoom and Teams
+- _Allow applications to monitor keyboard input_
+  - [Logi Options+][mx-master-3-setup]
 - _Control center_
   - Scroll down to _Automatically hide and show the menu bar_ > **Never**
     - This is critical so you can see the time when you're in another workspace
       (to combat timeblindness!)
-- _Login items_: Loom, Rectangle
-  - On the same screen, under _Allow in the background_, disable Epson apps
-    (Epson turns on 3 by default!)
+- _Login items_: Loom (if applicable), Rectangle
+  - On the same screen, under _Allow in the background_,
+    disable Epson apps if present (Epson turns on 3 by default!)
 - _Display the time with seconds in the menu bar_
 - _Customize modifier keys_
   - If you're using a Das Keyboard, set Option to Command and Command to Option
+  - (On some keyboards there's a switch to do this automatically)
 - _Mouse sensitivity_: 7/10 for magic mouse or magic trackpad
 - _Mouse buttons_: set secondary click
 - _Allow applications to update or delete other apps_: VS Code
   - This lets you update applications via Homebrew from the integrated terminal
 - _Dictation_: turn it on, set the microphone, and set the shortcut
   (I like to use "Press the Control key twice")
-  - On the same screen, turn off _Auto-punctuation_
+- _Keyboard layout_: Turn off these two if you don't want them:
+  - _Capitalize words automatically_
+  - _Add period with double-space_
 - _Spotlight search categories_: Applications and System Settings are all I use
-- _Internet accounts_: Add Google account for Calendars
+- _Internet accounts_: Add Google account for Calendars, if applicable
   - This will use Safari to authenticate; resist adding 1Password for Safari
     as it's a very poorly reviewed app
   - The whole purpose of this is for rare cases
     where you have to open an `invite.ics` file (see below)
 - _Night Shift options_: Schedule: Sunset to Sunrise
+
+## Changing Default Applications by File Type
 
 To change default applications for opening a file type,
 find one of those files, right-click, "Get Info," "Open with,"
@@ -56,7 +71,19 @@ sudo killall Finder
 
 I've had to do this for TypeScript files, as `.ts` is also a video format.
 
+## Rectangle
+
+The first time you open Rectangle you'll get a system message:
+
+> **Conflict with macOS tiling
+> Drag to screen edge tiling is enabled in both Rectangle and macOS.
+
+Choose the _Disable in macOS_ option, then click _OK_.
+You can re-enable it later from System Settings > Desktop & Dock > Windows.
+
 ## Calendar
+
+If you choose to use the _Calendar_ app at all:
 
 - Open the Calendar app and hit **⌘,** for preferences
 - Under **General**, for **Default Calendar** choose _Benjamin_ from _Google_
@@ -76,18 +103,21 @@ It's easiest to set up 1Password from your phone:
 
 Then in the app, under Settings, set _Security_ the way you like it:
 
-- Require password **Every 30 days** (like Signal)
-- Lock after the computer is idle for **Never** (since I keep it mostly at home)
+- Require password **Every 30 days** (like Signal), if this is available
+- Lock after the computer is idle for **Never**, for a personal laptop
+  (since I keep it mostly at home)
 - Uncheck **Lock on sleep…** (since my laptop goes to sleep often)
 
-Then set up 1Password CLI.
+Then set up 1Password CLI, if applicable.
 In the app, in the upper left, click **Settings** > **Developer**,
 and check **Integrate with 1Password CLI**.
 
-To really enjoy 1Password, I also [hobbled Google Password Manager][1password-chrome-cleanup]
+To really enjoy 1Password, I also [hobbled Google Password Manager][1password-chrome-cleanup] on my personal laptop
 so it wouldn't get in the way!
 
 ## Insomnia
+
+If you use Insomnia:
 
 - Open Insomnia and log in via GitHub.
 - Open **Preferences** > **Plugins** > **Browse Plugin Hub**
@@ -110,6 +140,10 @@ on how to take advantage of this integration.
 
 ## License and Install: MS Office
 
+On a work laptop, for Microsoft shops, MS Office generally comes
+pre-installed and pre-licensed.
+On a personal laptop:
+
 [Per Microsoft][ms-licensing], you can only have Microsoft Office on one device at a time.
 Just [uninstall it][ms-uninstall] from your old laptop;
 then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
@@ -117,13 +151,15 @@ then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
 
 ## Other Manual Installs
 
-- [Tableau][tableau]'s Homebrew cask is outdated. Use their download page instead.
-- [Toggl Track][toggl] is only available on the App Store.
-- You'll want to install **Chrome apps** like Messenger and possibly YouTube Music.
-- Find the download page for the [Epson WorkForce Pro WF-4833][epson-download] printer/scanner/copier,
-  and download and install the software. You'll need this for scanning documents.
+- [Toggl Track][toggl], if you use it, is only available on the App Store.
+- You may want to install **Chrome apps** like Messenger and possibly YouTube Music.
+- If you may want to scan documents, and you're still using this printer,
+  find the download page for the [Epson WorkForce Pro WF-4833][epson-download] printer/scanner/copier,
+  and download and install the software.
 
 ## Permissions: Discord
+
+If you use it:
 
 Discord will ask for permission to record keystrokes from other applications.
 You do _not_ have to allow that.
@@ -132,41 +168,14 @@ Per [Reddit][reddit-keystrokes].
 
 ## Sync: Obsidian
 
-Use Obsidian, rather than GitHub, for the initial Journal sync.
+On a personal laptop, use Obsidian, rather than GitHub, for the initial Journal sync.
 Just start the application and sync the vault from there.
 
 - Use the vault called Journal 2022+.
 - Name it _Journal_ because that'll be the name of the folder Obsidian creates.
 - Place it in `~/Workspace`.
 
-## Default Applications by File Extension
-
-The [setup script](scripts/setup.sh) will have created a folder
-within this repository, called `dummy_files`,
-populated with any files worth associating with new applications (like `csv`).
-It will even have opened the folder in Finder!
-
-- Right-click on each file > **Get Info**
-- Under **Open with**, select the application you want to use
-- Click **Change All**, and **Continue** to confirm
-
-Then feel free to close the _Get Info_ window, delete the file,
-and delete the whole folder when you're done with them.
-
 ## Other App Customization
-
-Allow assistive applications to control the computer
-iTerm
-Logi Options+
-Loom
-Lunar
-Rectangle
-Visual Studio Code
-
-Allow applications to monitor keyboard input
-Logi Options+
-
-https://support.logi.com/hc/en-us/articles/360035271133-Getting-Started-MX-Master-3
 
 - Rectangle
   - Launch on login
@@ -200,6 +209,7 @@ I can't seem to get rid of a couple spots VS Code is marking as issues:
 
 Neither of them seem to be real issues, as the scripts run fine.
 
+[mx-master-3-setup]: https://support.logi.com/hc/en-us/articles/360035271133-Getting-Started-MX-Master-3
 [tableau]: https://www.tableau.com/support/releases/desktop/2024.2#esdalt
 [toggl]: https://apps.apple.com/us/app/toggl-track-hours-time-log/id1291898086
 [1password-chrome-cleanup]: https://support.1password.com/disable-browser-password-manager/

@@ -17,6 +17,12 @@ You can then double-click on `~/.dotfiles/vscode/palomar.code-workspace`
 straight from Finder and it should open VS Code to a workspace
 of all the relevant repos.
 
+If the setup script creates a dummy CSV file and displays it in Finder,
+its purpose is to help you set up your Mac to open CSVs in Excel.
+See **Changing Default Applications by File Type**
+in [manual-customizations.md](manual-customizations.md).
+Feel free to delete the whole folder when you're done with them.
+
 ## Manual Customizations
 
 Continue with the manual (and usually optional) customizations
