@@ -15,6 +15,7 @@ visual-studio-code
 iterm2
 
 # DB and data work
+
 azure-data-studio
 mongodb-compass
 rstudio
