@@ -28,15 +28,8 @@ font-hack-nerd-font # non-ASCII dev glyphs
 
 # Communication and collaboration
 
-discord
-loom
 zoom
 signal
-
-# Second brain
-
-obsidian
-notion
 
 # Entertainment
 
