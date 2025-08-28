@@ -41,3 +41,7 @@ notion
 # Entertainment
 
 spotify
+
+# Browser
+
+firefox
