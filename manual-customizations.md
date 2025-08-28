@@ -54,6 +54,8 @@ And for system settings, search Spotlight for...
   - The whole purpose of this is for rare cases
     where you have to open an `invite.ics` file (see below)
 - _Night Shift options_: Schedule: Sunset to Sunrise
+- To hide files on a Mac desktop, navigate to System Settings > Desktop & Dock
+  and uncheck the "On Desktop" box under the "Show items" section.
 
 ## Changing Default Applications by File Type
 
