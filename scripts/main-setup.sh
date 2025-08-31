@@ -94,3 +94,10 @@ if [ -f "$HOME/.dotfiles/failed_installations.txt" ]; then
 fi
 
 echo "Setup completed!"
+
+# Remind user of manual steps remaining
+if [ -f "$HOME/.dotfiles/scripts/manual-steps-checklist.sh" ]; then
+  bash "$HOME/.dotfiles/scripts/manual-steps-checklist.sh"
+fi
+
+echo "All done! See above for any remaining manual steps."

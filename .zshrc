@@ -136,6 +136,11 @@ fpath+=("$BREW_PREFIX/share/zsh-completions")
 autoload -U compinit
 compinit
 
+# Load custom aliases if they exist
+if [ -f "$HOME/.aliases.zsh" ]; then
+  source "$HOME/.aliases.zsh"
+fi
+
 # Key binding for accepting suggestions: Shift + Tab
 bindkey '^[[Z' autosuggest-accept
 

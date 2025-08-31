@@ -3,11 +3,12 @@
 
 set -e          # Exit immediately if a command exits with a non-zero status.
 set -o pipefail # Exit if any part of a pipeline fails.
+timestamp=$(date +%Y%m%d%H%M%S)
 
 echo "===== Setting Up Dotfiles Symlinks ====="
 
 # Define the list of dotfiles and their linked locations
-dotfiles=(".zprofile" ".zshrc" ".p10k.zsh" ".gitconfig" ".gitignore_global" ".jq")
+dotfiles=(".zprofile" ".zshrc" ".aliases.zsh" ".p10k.zsh" ".gitconfig" ".gitignore_global" ".jq")
 vscode_dotfiles=("settings.json" "keybindings.json")
 vscode_directory="$HOME/Library/Application Support/Code/User"
 
@@ -23,7 +24,8 @@ for file in "${dotfiles[@]}"; do
       echo "$file is already symlinked correctly, skipping."
     else
       echo "Backing up existing $file to $HOME/$file.backup"
-      mv "$HOME/$file" "$HOME/$file.backup"
+    echo "Backing up existing $file to $HOME/$file.backup.$timestamp"
+    mv "$HOME/$file" "$HOME/$file.backup.$timestamp"
       ln -sf "$HOME/.dotfiles/$file" "$HOME/$file"
       echo "Created symlink for $file"
     fi
@@ -43,7 +45,8 @@ for file in "${vscode_dotfiles[@]}"; do
       echo "VS Code $file is already symlinked correctly, skipping."
     else
       echo "Backing up existing VS Code $file to $target_file.backup"
-      mv "$target_file" "$target_file.backup"
+    echo "Backing up existing VS Code $file to $target_file.backup.$timestamp"
+    mv "$target_file" "$target_file.backup.$timestamp"
       ln -sf "$source_file" "$target_file"
       echo "Created symlink for VS Code $file"
     fi
