@@ -23,6 +23,9 @@ See **Changing Default Applications by File Type**
 in [manual-customizations.md](manual-customizations.md).
 Feel free to delete the whole folder when you're done with them.
 
+To use GitHub Copilot in VS Code the first time,
+click where it says "Signed Out" in the bottom rail, and sign in!
+
 ## Manual Customizations
 
 Continue with the manual (and usually optional) customizations

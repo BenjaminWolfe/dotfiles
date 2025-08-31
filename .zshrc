@@ -114,16 +114,25 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# Ensure Homebrew is on PATH if this is an interactive **non-login** shell
+if ! command -v brew >/dev/null 2>&1; then
+  [[ -x /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
+  [[ -x /usr/local/bin/brew ]] && eval "$(/usr/local/bin/brew shellenv)"
+fi
 
-# Homebrew permissions, for zsh-completions
-chmod g-w $(brew --prefix)/share
+# Resolve Homebrew prefix once for use below
+BREW_PREFIX="$(brew --prefix 2>/dev/null || echo /opt/homebrew)"
+
+# Homebrew permissions, for zsh-completions (no-op if already set)
+[[ -d "$BREW_PREFIX/share" ]] && chmod g-w "$BREW_PREFIX/share" 2>/dev/null || true
 
 # Customizations
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-fpath+=($(brew --prefix)/share/zsh-completions)
+[[ -f "$BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && \
+  source "$BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+[[ -f "$BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && \
+  source "$BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+fpath+=("$BREW_PREFIX/share/zsh-completions")
 autoload -U compinit
 compinit
 
@@ -131,10 +140,12 @@ compinit
 bindkey '^[[Z' autosuggest-accept
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # Load the iTerm2 shell integration
-test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh" || true
+test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && \
+  source "${ZDOTDIR}/.iterm2_shell_integration.zsh" || true
+
 
 # NVM and Node are blocked by ThreatLocker and not currently needed
 # So omitting here

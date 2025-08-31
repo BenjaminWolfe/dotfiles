@@ -24,10 +24,11 @@ echo "4. Install VS Code Extensions"
 echo "5. Clone GitHub Repositories"
 echo "6. Configure System Preferences"
 echo "7. Setup iTerm2"
-echo "8. Run Everything"
+echo "8. Install radian for R"
+echo "9. Run Everything"
 echo "q. Quit"
 
-read -r -p "Enter your choice(s) (e.g., '1 2 3' or '8' for all): " choices
+read -r -p "Enter your choice(s) (e.g., '1 2 3' or '9' for all): " choices
 
 # Process the choices
 for choice in $choices; do
@@ -61,6 +62,10 @@ for choice in $choices; do
     bash "$HOME/.dotfiles/scripts/setup-iterm2.sh"
     ;;
   8)
+    echo "Installing radian for R..."
+    bash "$HOME/.dotfiles/scripts/install-radian.sh"
+    ;;
+  9)
     echo "Running Everything..."
     bash "$HOME/.dotfiles/scripts/install-core-tools.sh"
     bash "$HOME/.dotfiles/scripts/setup-symlinks.sh"
@@ -69,6 +74,7 @@ for choice in $choices; do
     bash "$HOME/.dotfiles/scripts/clone-repos.sh"
     bash "$HOME/.dotfiles/scripts/configure-preferences.sh"
     bash "$HOME/.dotfiles/scripts/setup-iterm2.sh"
+    bash "$HOME/.dotfiles/scripts/install-radian.sh"
     ;;
   q)
     echo "Exiting..."

@@ -100,5 +100,6 @@
   "shellcheck.enable": true,
   "shellcheck.run": "onType",
   "editor.detectIndentation": false,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "github.copilot.nextEditSuggestions.enabled": true
 }

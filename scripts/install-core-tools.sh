@@ -18,24 +18,32 @@ else
   echo "Xcode CLI tools already installed."
 fi
 
-# Install Homebrew
+# Install Homebrew / add it to PATH for this shell only
+# (no edits needed to ~/.zprofile)
 echo "Installing Homebrew..."
-if ! command -v brew &>/dev/null; then
+
+if command -v brew >/dev/null 2>&1; then
+  echo "Homebrew already installed: $(brew --version | head -n 1)"
+
+elif [[ -x /opt/homebrew/bin/brew ]] || [[ -x /usr/local/bin/brew ]]; then
+  # Installed but not on PATH — add to THIS shell only
+  echo "Homebrew found but not on PATH. Adding to current shell..."
+  if [[ -x /opt/homebrew/bin/brew ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  else
+    eval "$(/usr/local/bin/brew shellenv)"
+  fi
+
+else
   echo "Homebrew not found. Installing..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   
-  # Add Homebrew to PATH if needed
-  if [[ $(uname -m) == 'arm64' ]]; then
-    echo "Adding Homebrew to PATH for Apple Silicon Mac..."
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$HOME/.zprofile"
+  # Add Homebrew to PATH if needed for THIS shell (don’t touch ~/.zprofile)
+  if [[ -x /opt/homebrew/bin/brew ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
-  else
-    echo "Adding Homebrew to PATH for Intel Mac..."
-    echo 'eval "$(/usr/local/bin/brew shellenv)"' >> "$HOME/.zprofile"
+  elif [[ -x /usr/local/bin/brew ]]; then
     eval "$(/usr/local/bin/brew shellenv)"
   fi
-else
-  echo "Homebrew already installed."
 fi
 
 # Install Oh My Zsh

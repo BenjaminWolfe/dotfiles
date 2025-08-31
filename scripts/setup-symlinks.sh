@@ -7,7 +7,7 @@ set -o pipefail # Exit if any part of a pipeline fails.
 echo "===== Setting Up Dotfiles Symlinks ====="
 
 # Define the list of dotfiles and their linked locations
-dotfiles=(".zshrc" ".p10k.zsh" ".gitconfig" ".gitignore_global" ".jq")
+dotfiles=(".zprofile" ".zshrc" ".p10k.zsh" ".gitconfig" ".gitignore_global" ".jq")
 vscode_dotfiles=("settings.json" "keybindings.json")
 vscode_directory="$HOME/Library/Application Support/Code/User"
 
