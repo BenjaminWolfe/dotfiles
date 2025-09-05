@@ -50,6 +50,30 @@ After running the automated setup, consider these post-setup steps:
   ~/.dotfiles/scripts/manual-steps-checklist.sh
   ```
 
+## To Update
+
+To determine what homebrew formulae you've already added to your laptop
+(in order to add them to /config/formulae.txt),
+try this from the command line (with homebrew and jq installed):
+
+```sh
+brew info --json=v2 --installed \
+| jq -r '.formulae[] | select([.installed[].installed_on_request] | any) | .full_name' \
+| sort
+```
+
+To list taps:
+
+```sh
+brew tap | sort
+```
+
+To list casks:
+
+```sh
+brew list --cask | sort
+```
+
 ## Troubleshooting
 
 If you encounter issues:

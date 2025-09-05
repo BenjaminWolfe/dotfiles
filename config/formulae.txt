@@ -6,7 +6,10 @@ zsh-autosuggestions
 zsh-completions
 jq
 miller
+wget
+syslog-ng
 
 # Data
 
 r
+pipx # for radian
