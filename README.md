@@ -27,12 +27,14 @@ and copy-paste into a Terminal window to kick things off.
   straight from Finder and it should open VS Code to a workspace
   of all the relevant repos.
 - To pull up a terminal window in VS Code, use Command-J.
-
-If the setup script creates a dummy CSV file and displays it in Finder,
-its purpose is to help you set up your Mac to open CSVs in Excel.
-See **Changing Default Applications by File Type**
-in [manual-customizations.md](manual-customizations.md).
-Feel free to delete the whole folder when you're done with them.
+- If the setup script creates a dummy CSV file and displays it in Finder,
+  its purpose is to help you set up your Mac to open CSVs in Excel.
+  See **Changing Default Applications by File Type**
+  in [manual-customizations.md](manual-customizations.md).
+- The process will have added some lines and files here and there.
+  So when you're done, feel free to open the repo in VS Code
+  and discard changes in the source control panel
+  (like `.zprofile`, `.zshrc`, `failed_installations.txt`, and `dummy_files`).
 
 ## Google Chrome Bookmarks
 

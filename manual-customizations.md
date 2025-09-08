@@ -55,20 +55,30 @@ and check **Integrate with 1Password CLI**.
 To really enjoy 1Password, I also [hobbled Google Password Manager][1password-chrome-cleanup] on my personal laptop
 so it wouldn't get in the way!
 
+## Displays and Bluetooth Devices, and Sounds
+
+Not much to walk through here.
+But this is always one of the first things I do, after the basic basics.
+I want my laptop to see my monitors and my various peripherals!
+
+And sometimes I'm switching laptops in the middle of a busy day—
+so it's smart to get the audio right right away.
+
 ## OS Customization
 
 - Add your home directory to the Finder: **Finder** > **⌘,** > **Sidebar** > your username
 - Add the Workspace directory to the Finder:
-  - Click on your username that's now showing
+  - Go back to the main Finder screen
+  - Click on your username that's now showing in the lefthand sidebar
   - Then double-click the **Workspace** folder
   - Then mouse over **Workspace** at the top until you see a little blue folder
   - Drag that blue folder over into the menu bar
 
-And for system settings, search Spotlight for...
+And for system settings, search Spotlight for the following and make some changes:
 
 - _Allow applications to record your screen_: Any applications that make sense
   - Conference calling apps like Zoom, Teams, and Slack (Slack also for videos)
-  - Remember Google Meet meetings happen in Chrome
+  - Remember Google Meet meetings happen in Chrome, plus maybe Firefox
   - Toggl, if applicable, to make time-tracking easier
 - _Allow assistive applications to control the computer_: At least the following
   - iTerm
@@ -91,8 +101,8 @@ And for system settings, search Spotlight for...
 - _Customize modifier keys_
   - If you're using a Das Keyboard, set Option to Command and Command to Option
   - (On some keyboards there's a switch to do this automatically)
-- _Mouse sensitivity_: 7/10 for magic mouse or magic trackpad
-- _Mouse buttons_: set secondary click
+- _Mouse sensitivity_: 7/10 for magic mouse or magic trackpad (there is no 0)
+- _Mouse buttons_: set secondary click to right side if needed
 - _Allow applications to update or delete other apps_: VS Code
   - This lets you update applications via Homebrew from the integrated terminal
 - _Dictation_: turn it on, set the microphone, and set the shortcut
@@ -106,9 +116,10 @@ And for system settings, search Spotlight for...
     as it's a very poorly reviewed app
   - The whole purpose of this is for rare cases
     where you have to open an `invite.ics` file (see below)
+- _Allow applications to access your location_: Up to you
 - _Night Shift options_: Schedule: Sunset to Sunrise
-- To hide files on a Mac desktop, navigate to System Settings > Desktop & Dock
-  and uncheck the "On Desktop" box under the "Show items" section.
+- _Desktop & Dock_: uncheck the "On Desktop" box under the "Show items" section
+  to hide all the messy screenshots on your desktop!
 
 ## Rectangle
 
@@ -140,19 +151,33 @@ If you choose to use the _Calendar_ app at all:
 
 ## Other App Customization
 
-- Rectangle
-  - Launch on login
-    - (This may not be needed if you set it in System Preferences!
-      Come back and update this if you find that's the case)
 - VS Code
   - In the version control panel
-    - Next to **Source Control Repositories**
-      - Three dots > **Sort by Name** just because it puts this repo at the top
-    - Next to **Source Control** (below **Source Control Repositories**)
-      - Three dots > **View & Sort**: **View as Tree**
-- Slack
+    - Next to **Changes**
+      - Three dots > **View & Sort** > **Repositories** > **Sort by Name**
+      - Three dots > **View & Sort** > **View as Tree**
+- Firefox (if applicable)
+  - You'll want to sync bookmarks
+  - It seems to want you to download the mobile app, but I think it's optional
+- Signal (if applicable)
+  - Just open it and follow the directions to link accounts
+  - If you're not keeping your old laptop, probably un-link that one!
+    - Rename this laptop from your phone:
+      Profile Pic > Linked Devices > 3 dots next to a device > Edit Name
+    - Confirm that the name changed on your new laptop:
+      Hamburger Menu > General > Device Name
+    - Unlink the old laptop from your phone:
+      Profile Pic > Linked Devices > 3 dots next to the device > Unlink
+    - Delete data on the old laptop:
+      Hamburger Menu > Privacy > Delete Data
+    - You can use the uninstall script (see `README.md`) to uninstall Signal
+- Spotify (if applicable)
+  - Spotify is a simple QR code as well
+- Lunar (if applicable)
+  - Lunar has some setup steps to check that it can update your monitors
+- Slack (if applicable)
   - Mute audio notifications
-- Toggl
+- Toggl (if applicable)
   - General: Open at Login
   - Calendar: Activity Recording: Record active application and window
 
