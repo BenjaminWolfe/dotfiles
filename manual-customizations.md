@@ -2,6 +2,22 @@
 
 Before walking through these, follow the steps from the [README](readme.md).
 
+## Changing Default Applications by File Type
+
+To change default applications for opening a file type,
+find one of those files, right-click, "Get Info," "Open with,"
+choose the application, and click "Change All."
+
+In icon views in Finder, those files still may show the wrong application.
+To fix that, then run these lines:
+
+```sh
+sudo rm -rf /Library/Caches/com.apple.iconservices.store
+sudo killall Finder
+```
+
+I've also had to do this for TypeScript files, as `.ts` is also a video format.
+
 ## 1Password
 
 On the MacBook:
@@ -93,22 +109,6 @@ And for system settings, search Spotlight for...
 - _Night Shift options_: Schedule: Sunset to Sunrise
 - To hide files on a Mac desktop, navigate to System Settings > Desktop & Dock
   and uncheck the "On Desktop" box under the "Show items" section.
-
-## Changing Default Applications by File Type
-
-To change default applications for opening a file type,
-find one of those files, right-click, "Get Info," "Open with,"
-choose the application, and click "Change All."
-
-In icon views in Finder, those files still may show the wrong application.
-To fix that, then run these lines:
-
-```sh
-sudo rm -rf /Library/Caches/com.apple.iconservices.store
-sudo killall Finder
-```
-
-I've had to do this for TypeScript files, as `.ts` is also a video format.
 
 ## Rectangle
 
