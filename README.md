@@ -6,16 +6,23 @@ See [prerequisites.md](prerequisites.md) to get started.
 
 ## Automated Set-Up
 
-Run [scripts/main-setup.sh](scripts/main-setup.sh) to set everything up!
-
-```sh
-cd ~/.dotfiles/scripts
-./main-setup.sh
-```
-
-You can then double-click on `~/.dotfiles/vscode/palomar.code-workspace`
-straight from Finder and it should open VS Code to a workspace
-of all the relevant repos.
+- Run [scripts/main-setup.sh](scripts/main-setup.sh) to set everything up!
+  ```sh
+  cd ~/.dotfiles/scripts
+  ./main-setup.sh
+  ```
+  It may prompt you for your password a few times.
+  Before to enter it!
+  It will likely also tell you to add lines here and there to `.zshrc`.
+  Don't worry; I've handled it!
+- It may ask you about dummy files to change default applications.
+  Feel free to select Yes! (See immediately below.)
+- It may recommend testing `radian` from the terminal window.
+  For that, wait till after you've opened VS Code! (See below.)
+- Double-click on `~/.dotfiles/vscode/palomar.code-workspace`
+  straight from Finder and it should open VS Code to a workspace
+  of all the relevant repos.
+- To pull up a terminal window in VS Code, use Command-J.
 
 If the setup script creates a dummy CSV file and displays it in Finder,
 its purpose is to help you set up your Mac to open CSVs in Excel.

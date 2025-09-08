@@ -2,7 +2,7 @@
 # Checklist for manual steps after setup
 
 echo "[INFO] Manual steps remaining after setup:"
-echo "- Install non-Homebrew apps (see manual-customizations.md)"
-echo "- Review VS Code extensions"
-echo "- Configure iTerm2 preferences if not done"
-echo "- Set up 1Password CLI if desired"
+echo "- Install any non-Homebrew apps you want (see manual-customizations.md)"
+echo "- If you like, review VS Code extensions"
+echo "- If you like, configure iTerm2 preferences (though this should be automatic)"
+echo "- If you like, set up 1Password CLI"
