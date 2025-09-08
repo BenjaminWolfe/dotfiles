@@ -23,6 +23,25 @@ See **Changing Default Applications by File Type**
 in [manual-customizations.md](manual-customizations.md).
 Feel free to delete the whole folder when you're done with them.
 
+## Google Chrome Bookmarks
+
+I was locked from syncing my Chrome bookmarks on my work laptop.
+So instead, I used OneDrive to do it.
+
+To set this up:
+
+- Copy your `Bookmarks` and `Favicons` files on your old laptop
+  from `~/Library/Application Support/Google/Chrome/Default` (for the `Default` profile)
+  to `~/OneDrive - Palomar Holdings Ins/Chrome/Default`
+  (again for the `Default` profile, and assuming that `OneDrive - Palomar Holdings Ins` is your shared drive).
+- If it was anything other than that profile and that shared drive location,
+  update the variables near the top of `scripts/link-chrome-bookmarks.sh`.
+- Then on your new laptop, run the following (it will close Chrome):
+  ```sh
+  cd ~/.dotfiles/scripts
+  ./link-chrome-bookmarks.sh
+  ```
+
 ## GitHub Copilot
 
 To use GitHub Copilot in VS Code the first time,
