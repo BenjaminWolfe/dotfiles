@@ -45,7 +45,7 @@ GH_USERNAME="BenjaminWolfe"
 cd ~
 git clone git@github.com:$GH_USERNAME/dotfiles.git .dotfiles
 cd .dotfiles
-git checkout main
+git checkout palomar
 git pull
 ```
 
