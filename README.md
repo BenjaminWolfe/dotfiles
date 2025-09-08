@@ -1,8 +1,12 @@
 # dotfiles
 
-The [Everyday Carry][edc] for my personal setup, so to speak.
-It's meant to help me get set up on a new Mac.
+This is my [Everyday Carry][edc] for my personal setup, so to speak.
+It's meant to help me, or you, get set up on a new Mac.
+
 See [prerequisites.md](prerequisites.md) to get started.
+I've really tried to set it up so that all you have to do
+is connect to the internet, go to GitHub, find your way to this repository,
+and copy-paste into a Terminal window to kick things off.
 
 ## Automated Set-Up
 
@@ -49,18 +53,12 @@ To set this up:
   ./link-chrome-bookmarks.sh
   ```
 
-## GitHub Copilot
-
-To use GitHub Copilot in VS Code the first time,
-click where it says "Signed Out" in the bottom rail, and sign in!
-
-Copilot is supported in VS Code, but not in iTerm2.
-For Copilot in the terminal, use the VS Code integrated terminal.
-
 ## Manual Customizations
 
 Continue with the manual (and usually optional) customizations
 from [manual-customizations.md](manual-customizations.md).
+You'll want to, at the very least, get set up with 1Password if you use it
+(along with the Chrome extension).
 
 ## After Setup Checklist
 
@@ -75,6 +73,14 @@ After running the automated setup, consider these post-setup steps:
   ```sh
   ~/.dotfiles/scripts/manual-steps-checklist.sh
   ```
+
+## GitHub Copilot
+
+To use GitHub Copilot in VS Code the first time,
+click where it says "Signed Out" in the bottom rail, and sign in!
+
+Copilot is supported in VS Code, but not in iTerm2.
+For Copilot in the terminal, use the VS Code integrated terminal.
 
 ## Uninstalling Everything
 
