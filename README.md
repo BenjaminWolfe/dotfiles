@@ -50,6 +50,27 @@ After running the automated setup, consider these post-setup steps:
   ~/.dotfiles/scripts/manual-steps-checklist.sh
   ```
 
+## Uninstalling Everything
+
+To remove all tools and configurations set up by this repo, use the uninstall script:
+
+```sh
+cd ~/.dotfiles/scripts
+./teardown.sh
+```
+
+To remove all VS Code extensions (optional, if VS Code is still installed):
+
+```sh
+code --list-extensions | xargs -n 1 code --uninstall-extension
+```
+
+**Important notes:**
+- For best results, run this script from the macOS Terminal app (not VS Code), especially if you plan to uninstall Homebrew or VS Code itself.
+- Some steps (like removing cloned repos and reverting system preferences) must be done manually. The script will remind you.
+- You may need to enter your password for some uninstall steps (e.g., Xcode CLI tools).
+- Review the script before running if you want to customize what gets removed.
+
 ## To Update
 
 To determine what homebrew formulae you've already added to your laptop
