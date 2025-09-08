@@ -130,40 +130,6 @@ If you choose to use the _Calendar_ app at all:
 - Under **Accounts**, disable iCloud
 - Under **Alerts**, just uncheck everything
 
-## Insomnia
-
-If you use Insomnia:
-
-- Open Insomnia and log in via GitHub.
-- Open **Preferences** > **Plugins** > **Browse Plugin Hub**
-- Enter `insomnia-plugin-op` and click **Install Plugin**
-- On the main Insomnia screen, pick a workspace
-- At the bottom left, click the **+** next to **Environments** to add one;
-  call it `base` or anything you like
-- Tell the plugin where to find 1Password by replacing the blank `{}` with this:
-
-  ```
-  {
-    "__op_plugin": {
-      "cliPath": "/opt/homebrew/bin/op"
-    }
-  }
-  ```
-
-See [how_to/insomnia_1password.md](how_to/insomnia_1password.md) for more
-on how to take advantage of this integration.
-
-## License and Install: MS Office
-
-On a work laptop, for Microsoft shops, MS Office generally comes
-pre-installed and pre-licensed.
-On a personal laptop:
-
-[Per Microsoft][ms-licensing], you can only have Microsoft Office on one device at a time.
-Just [uninstall it][ms-uninstall] from your old laptop;
-then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
-**Products you've purchased** at the bottom > **Install**.
-
 ## Other Manual Installs
 
 - [Toggl Track][toggl], if you use it, is only available on the App Store.
@@ -171,24 +137,6 @@ then go to your [Microsoft Account][ms-account] > **Services & subscriptions** >
 - If you may want to scan documents, and you're still using this printer,
   find the download page for the [Epson WorkForce Pro WF-4833][epson-download] printer/scanner/copier,
   and download and install the software.
-
-## Permissions: Discord
-
-If you use it:
-
-Discord will ask for permission to record keystrokes from other applications.
-You do _not_ have to allow that.
-That's for if you're gaming, and you want to start a call w/o leaving the game.
-Per [Reddit][reddit-keystrokes].
-
-## Sync: Obsidian
-
-On a personal laptop, use Obsidian, rather than GitHub, for the initial Journal sync.
-Just start the application and sync the vault from there.
-
-- Use the vault called Journal 2022+.
-- Name it _Journal_ because that'll be the name of the folder Obsidian creates.
-- Place it in `~/Workspace`.
 
 ## Other App Customization
 
@@ -225,11 +173,6 @@ I can't seem to get rid of a couple spots VS Code is marking as issues:
 Neither of them seem to be real issues, as the scripts run fine.
 
 [mx-master-3-setup]: https://support.logi.com/hc/en-us/articles/360035271133-Getting-Started-MX-Master-3
-[tableau]: https://www.tableau.com/support/releases/desktop/2024.2#esdalt
 [toggl]: https://apps.apple.com/us/app/toggl-track-hours-time-log/id1291898086
 [1password-chrome-cleanup]: https://support.1password.com/disable-browser-password-manager/
-[ms-licensing]: https://support.microsoft.com/en-us/office/transfer-your-office-license-to-another-device-or-another-person-8a967fb6-6c65-433e-800e-b9ae3436c2de
-[ms-uninstall]: https://support.microsoft.com/en-us/office/uninstall-office-for-mac-eefa1199-5b58-43af-8a3d-b73dc1a8cae3
-[ms-account]: https://account.microsoft.com/
 [epson-download]: https://epson.com/Support/Printers/All-In-Ones/WorkForce-Series/Epson-WorkForce-Pro-WF-4833/s/SPT_C11CJ05202
-[reddit-keystrokes]: https://www.reddit.com/r/discordapp/comments/haygfd/why_is_discord_asking_permission_to_record_all_of/
