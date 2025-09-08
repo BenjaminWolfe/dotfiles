@@ -48,3 +48,5 @@ cd .dotfiles
 git checkout main
 git pull
 ```
+
+Then return to [README.md](README.md) to continue setup!
