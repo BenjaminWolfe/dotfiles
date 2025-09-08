@@ -2,6 +2,43 @@
 
 Before walking through these, follow the steps from the [README](readme.md).
 
+## 1Password
+
+On the MacBook:
+
+- Open 1Password
+- Click "Sign In"
+- Open 1Password on your phone
+- Tap your profile picture in the top right, and tap "Scan QR Code…"
+- Scan the QR code, and pick which account you're signing into
+- Tap to allow full access
+
+It's easiest to set up 1Password from your phone:
+
+- Log in (fingerprint)
+- In the upper right, go to each account in turn, if you have more than one
+- For each, also in the upper right, go to _Set Up Another Device_
+- Copy the secret key
+- On your Mac, you may want to sign in in Chrome as well as the app
+
+Then in the upper left drop-down, under Settings,
+set _General_ and _Security_ the way you like them—e.g.:
+
+- Lock after the computer is idle for **Never**, for a personal laptop
+  (since I keep it mostly at home)
+- Uncheck **Lock on sleep…** (since my laptop goes to sleep often)
+
+—and go to _Browser_ and click to "Get 1Password for your Browser."
+
+(Use "Add Browser" from that screen to add Firefox—_and_ open Firefox and add it there.)
+
+Then set up 1Password CLI, if applicable.
+In the app, in the upper left, click **Settings** > **Developer**,
+and check **Integrate with 1Password CLI**.
+
+To really enjoy 1Password, I also [hobbled Google Password Manager][1password-chrome-cleanup] on my personal laptop
+so it wouldn't get in the way!
+
 ## OS Customization
 
 - Add your home directory to the Finder: **Finder** > **⌘,** > **Sidebar** > your username
@@ -92,30 +129,6 @@ If you choose to use the _Calendar_ app at all:
   or wherever you want `invite.ics` files to be added by default
 - Under **Accounts**, disable iCloud
 - Under **Alerts**, just uncheck everything
-
-## 1Password
-
-It's easiest to set up 1Password from your phone:
-
-- Log in (fingerprint)
-- In the upper right, go to each account, business and home, in turn
-- For each, also in the upper right, go to _Set Up Another Device_
-- Copy the secret key
-- On your Mac, you may want to sign in in Chrome as well as the app
-
-Then in the app, under Settings, set _Security_ the way you like it:
-
-- Require password **Every 30 days** (like Signal), if this is available
-- Lock after the computer is idle for **Never**, for a personal laptop
-  (since I keep it mostly at home)
-- Uncheck **Lock on sleep…** (since my laptop goes to sleep often)
-
-Then set up 1Password CLI, if applicable.
-In the app, in the upper left, click **Settings** > **Developer**,
-and check **Integrate with 1Password CLI**.
-
-To really enjoy 1Password, I also [hobbled Google Password Manager][1password-chrome-cleanup] on my personal laptop
-so it wouldn't get in the way!
 
 ## Insomnia
 
