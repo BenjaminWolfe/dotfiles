@@ -55,6 +55,26 @@ To set this up:
   ./link-chrome-bookmarks.sh
   ```
 
+## Azure Data Studio
+
+At work I also use Azure Data Studio to connect to SQL Server.
+Similar to with Chrome, I've symlinked my `settings.json` to OneDrive.
+
+As with Chrome, to set this up:
+
+- Copy `settings.json` on your old laptop
+  from `~/Library/Application Support/azuredatastudio/User`
+  to `~/OneDrive - Palomar Holdings Ins/Azure Data Studio/User`
+  (assuming that `OneDrive - Palomar Holdings Ins` is your shared drive).
+- If it was anything other than that shared drive location,
+  update the variable near the top of `scripts/link-ads-connections.sh`.
+- Then on your new laptop, run the following:
+  ```sh
+  cd ~/.dotfiles/scripts
+  ./link-ads-connections.sh
+  ```
+- When you open Azure Data Studio, you'll still have to plug in your passwords.
+
 ## Manual Customizations
 
 Continue with the manual (and usually optional) customizations
