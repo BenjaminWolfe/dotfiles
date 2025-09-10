@@ -157,7 +157,10 @@ If you choose to use the _Calendar_ app at all:
       - Three dots > **View & Sort** > **Repositories** > **Sort by Name**
       - Three dots > **View & Sort** > **View as Tree**
 - Outlook (if applicable)
-  - Consider **Tools** > **Keyboard Shortcuts**; I sometimes use Gmail shortcuts.
+  - Consider **Tools** > **Keyboard Shortcuts**;
+    I sometimes use Gmail shortcuts.
+  - Consider Top Ribbon > **...** > **Customize Toolbar**;
+    I add _Forward as Attachment_ and _Report Phishing_
 - Firefox (if applicable)
   - You'll want to sync bookmarks
   - It seems to want you to download the mobile app, but I think it's optional
