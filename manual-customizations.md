@@ -64,9 +64,16 @@ I want my laptop to see my monitors and my various peripherals!
 And sometimes I'm switching laptops in the middle of a busy day—
 so it's smart to get the audio right right away.
 
+## GitHub Copilot
+
+To use GitHub Copilot in VS Code the first time,
+click where it says "Signed Out" in the bottom rail, and sign in!
+
+Copilot is supported in VS Code, but not in iTerm2.
+For Copilot in the terminal, use the VS Code integrated terminal.
+
 ## OS Customization
 
-- Add your home directory to the Finder: **Finder** > **⌘,** > **Sidebar** > your username
 - Add the Workspace directory to the Finder:
   - Go back to the main Finder screen
   - Click on your username that's now showing in the lefthand sidebar
