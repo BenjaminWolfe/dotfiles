@@ -13,3 +13,5 @@ syslog-ng
 
 r
 pipx # for radian
+harfbuzz fribidi # for R tidyverse textshaping package
+freetype libpng libtiff jpeg-turbo webp # for R tidyverse ragg package
