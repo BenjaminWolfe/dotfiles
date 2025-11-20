@@ -18,7 +18,7 @@ iterm2
 
 azure-data-studio
 mongodb-compass
-rstudio
+rstudio # open via command line: `open -a RStudio`
 quarto
 
 # Fonts
