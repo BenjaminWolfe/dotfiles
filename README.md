@@ -6,8 +6,12 @@ See [prerequisites.md](prerequisites.md) to get started.
 
 ## Automated Set-Up
 
-Run [scripts/setup](scripts/setup.sh) to set everything up!
-**Note:** As of 2024-07-23, I haven't actually tested this script end to end.
+Run [scripts/main-setup.sh](scripts/main-setup.sh) to set everything up!
+
+```sh
+cd ~/.dotfiles/scripts
+./main-setup.sh
+```
 
 ## OS Customization
 
