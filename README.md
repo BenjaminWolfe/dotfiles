@@ -158,6 +158,8 @@ Just start the application and sync the vault from there.
 - Name it _Journal_ because that'll be the name of the folder Obsidian creates.
 - Place it in `~/Workspace`.
 
+Follow the instructions in [obsidian-claude-mcp.md](obsidian-claude-mcp.md) to set up Claude Desktop with Obsidian.
+
 ## Default Applications by File Extension
 
 The [setup script](scripts/setup.sh) will have created a folder

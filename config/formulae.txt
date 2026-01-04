@@ -20,6 +20,7 @@ vercel-cli
 
 postgresql@14
 r
+uv # pip replacement for MCP Obsidian + Claude integration
 
 # Installing FOSS Projects
 

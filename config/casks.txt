@@ -50,6 +50,7 @@ firefox # temp? experimental; for ACL YouTube playlist editing
 obsidian
 notion
 chatgpt
+claude
 
 # Hobby
 

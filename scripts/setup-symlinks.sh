@@ -10,10 +10,12 @@ echo "===== Setting Up Dotfiles Symlinks ====="
 dotfiles=(".zshrc" ".p10k.zsh" ".gitconfig" ".gitignore_global" ".jq")
 vscode_dotfiles=("settings.json" "keybindings.json")
 vscode_directory="$HOME/Library/Application Support/Code/User"
+claude_directory="$HOME/Library/Application Support/Claude"
 
 # Ensure necessary directories exist
 mkdir -p "$vscode_directory"
 mkdir -p "$HOME/.dotfiles/iterm2/colors"
+mkdir -p "$claude_directory"
 
 # Backup existing configuration files if they exist and create symlinks
 for file in "${dotfiles[@]}"; do
@@ -52,5 +54,33 @@ for file in "${vscode_dotfiles[@]}"; do
     echo "Created symlink for VS Code $file"
   fi
 done
+
+echo "Configuring Claude for MCP Obsidian (https://github.com/MarkusPfundstein/mcp-obsidian) and REST API plugin..."
+claude_config_file="$claude_directory/claude_desktop_config.json"
+claude_template="$HOME/.dotfiles/claude/claude_desktop_config.json.template"
+
+if [ ! -f "$claude_template" ]; then
+  echo "ERROR: Claude template not found at $claude_template. This file should exist in your dotfiles repo." >&2
+  exit 1
+fi
+
+if [ -L "$claude_config_file" ]; then
+  target="$(readlink "$claude_config_file")"
+  if [ "$target" = "$claude_template" ]; then
+    echo "Claude config is already a symlink to the template ($target). Leaving as-is."
+  else
+    echo "Claude config is a symlink to $target. Leaving the symlink in place. Remove it if you want to replace it with a copied template."
+  fi
+else
+  if [ -e "$claude_config_file" ]; then
+    echo "Found existing Claude config at $claude_config_file (not a symlink). Backing up to $claude_config_file.backup"
+    mv "$claude_config_file" "$claude_config_file.backup"
+  else
+    echo "No existing Claude config found. Creating one from template..."
+  fi
+
+  cp -f "$claude_template" "$claude_config_file"
+  echo "Created Claude configuration at $claude_config_file from template $claude_template."
+fi
 
 echo "Dotfiles symlinks setup complete."
