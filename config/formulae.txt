@@ -15,3 +15,5 @@ r
 pipx # for radian
 harfbuzz fribidi # for R tidyverse textshaping package
 freetype libpng libtiff jpeg-turbo webp # for R tidyverse ragg package
+unixodbc # to connect R to SQL Server via DBI and dbplyr
+libiodbc # to connect R to Snowflake via RODBC; see snowflake.md
