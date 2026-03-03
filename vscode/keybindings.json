@@ -17,5 +17,13 @@
       "command": "type",
       "args": { "text": " |>" },
       "when": "editorTextFocus && (editorLangId == 'r' || editorLangId == 'rmd' || editorLangId == 'quarto')"
+    },
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001b\r"
+        },
+        "when": "terminalFocus"
     }
 ]

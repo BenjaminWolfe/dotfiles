@@ -2,6 +2,11 @@
 
 1password
 
+# AI
+
+claude
+claude-code
+
 # User experience
 
 rectangle
