@@ -399,6 +399,18 @@ Feel free to share your fork with other team members too—they might like your 
 - **Shell not changing**: Log out and back in after setup
 - **iTerm2 preferences not loading**: Check preferences location in iTerm2 settings
 
+Firefox issues with MDM at work:
+
+After an MDM update, you may have trouble opening Firefox.
+This Redditor seemed to have seen the issue before:
+
+https://www.reddit.com/r/firefox/comments/1hb7fgk/comment/mbmbujg/
+
+I had to drag the Firefox app to the trash,
+also drag `/opt/homebrew/Caskroom/firefox` to the trash,
+and then just reinstall from Homebrew.
+(Deleting the files from the command line didn't work.)
+
 ---
 
 *Originally created by Benjamin Wolfe.*
