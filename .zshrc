@@ -157,3 +157,6 @@ test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && \
 
 # Custom tools
 export PATH="$PATH:$HOME/.dotfiles/tools"
+
+# Global Python venv — always active; project venvs override when activated
+[[ -f "$HOME/.venv/bin/activate" ]] && source "$HOME/.venv/bin/activate"

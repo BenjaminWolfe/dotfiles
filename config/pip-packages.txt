@@ -1,0 +1,7 @@
+# Python packages installed into ~/.venv (global venv, always active)
+# When a Claude agent installs a package with `pip install <pkg>`, add it here.
+
+# Data / file formats
+pyyaml
+openpyxl
+
