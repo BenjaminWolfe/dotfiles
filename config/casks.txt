@@ -21,6 +21,7 @@ iterm2
 
 # DB and data work
 
+datagrip
 azure-data-studio
 mongodb-compass
 rstudio # open via command line: `open -a RStudio`

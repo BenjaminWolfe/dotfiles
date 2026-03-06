@@ -25,7 +25,8 @@ echo "5. Clone GitHub Repositories"
 echo "6. Configure System Preferences"
 echo "7. Setup iTerm2"
 echo "8. Install radian for R"
-echo "9. Run Everything"
+echo "9. Setup DataGrip"
+echo "10. Run Everything"
 echo "q. Quit"
 
 read -r -p "Enter your choice(s) (e.g., '1 2 3' or '9' for all): " choices
@@ -66,6 +67,10 @@ for choice in $choices; do
     bash "$HOME/.dotfiles/scripts/install-radian.sh"
     ;;
   9)
+    echo "Setting up DataGrip..."
+    bash "$HOME/.dotfiles/scripts/setup-datagrip.sh"
+    ;;
+  10)
     echo "Running Everything..."
     bash "$HOME/.dotfiles/scripts/install-core-tools.sh"
     bash "$HOME/.dotfiles/scripts/setup-symlinks.sh"
@@ -75,6 +80,7 @@ for choice in $choices; do
     bash "$HOME/.dotfiles/scripts/configure-preferences.sh"
     bash "$HOME/.dotfiles/scripts/setup-iterm2.sh"
     bash "$HOME/.dotfiles/scripts/install-radian.sh"
+    bash "$HOME/.dotfiles/scripts/setup-datagrip.sh"
     ;;
   q)
     echo "Exiting..."
